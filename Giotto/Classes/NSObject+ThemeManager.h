@@ -16,28 +16,28 @@
 
 
 /**
- *  Questo protocollo definisce i metodi che permettono una gestione 'custom' dei temi al di fuori del pod di SysdataCore.
- */
+ * This protocol defines the methods that allow 'custom' management of the themes outside the SysdataCore pod.
+*/
 @protocol ThemeManagerCustomizationProtocol <NSObject>
 @optional
 
 /**
- *  Verifica se il keyPath passato è gestito in maniera 'custom' da quanto previsto da SysdataCore.
+ * Verifies whether the past keyPath is managed 'custom' by what SysdataCore provides.
  *
- *  @param keyPath il keyPath da verificare
+ * @param keyPath the keyPath to verify
  *
- *  @return YES se il keyPath è gestito in maniera 'custom', altrimenti NO.
+ * @return YES if keyPath is handled in 'custom' mode, otherwise NO.
  *
- *  @discussion Di default restituisce NO.
+ * @discussion By default it returns NO.
  */
 - (BOOL) shouldApplyThemeCustomizationForKeyPath:(NSString*)keyPath;
 
 /**
- *  Gestisce la stilizzazione del keyPath passato in maniera 'custom' e sovrascrive l'eventuale implementazione prevista da SysdataCore.
+ * It manages the stylization of the passed keyPath in a custom way and overwrites any implementation expected by SysdataCore.
  *
- *  @param keyPath il keyPath da stilizzare
+ * @param keyPath the keyPath to be stylized
  *
- *  @discussion Di default chiama solo il setValue:forKeyPath:
+ * @discussion By default it only calls the setValue: forKeyPath:
  */
 - (void) applyCustomizationOfThemeValue:(id)value forKeyPath:(NSString*)keyPath;
 

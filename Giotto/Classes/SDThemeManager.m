@@ -95,7 +95,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         }
         else
         {
-            SDLogModuleError(kThemeManagerLogModuleName, @"Tema di default non trovato");
+            SDLogModuleError(kThemeManagerLogModuleName, @"Default theme not found");
         }
     }
     return self;
@@ -103,44 +103,44 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 
 
 /**
- *  Carica il tema dal plist con il nome dato, ne fa le dovute conversioni e modifiche e lo restituisce.
+ * Load the theme from the plist with the given name, make the necessary conversions and changes and return it.
  *
- *  @param plistName il nome del plist da cui caricare il tema (senza l'estensione)
+ * @param plistName the name of the plist from which to upload the theme (without the extension)
  *
- *  @return Il dictionary del tema caricato o nil
+ * @return The theme dictionary loaded or nil
  */
 - (NSDictionary*) loadThemeFromPlist:(NSString*)plistName
 {
     NSString* path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
     if ([[NSFileManager defaultManager] fileExistsAtPath:path])
     {
-        // converto il tema per ragioni di retrocompatibilità
+        // convert the theme for reasons of retrocompatibility
         NSDictionary* plistDict = [self convertThemeForCompatibility:[NSDictionary dictionaryWithContentsOfFile:path]];
         
-        // struttura che conterrà il tema finale
+        // structure that will contain the final theme
         NSMutableDictionary* theme = [NSMutableDictionary new];
         
-        // struttura che conterrà le entries di tutti i dizionari del plist diversi da "Constants"
+        // structure that will contain the entries of all plist dictionaries other than "Constants"
         NSMutableDictionary* styles = [NSMutableDictionary new];
         
         for (NSString* key in [plistDict allKeys])
         {
             if ([key isEqualToString:FORMAT_VERSION_KEY] || [key isEqualToString:CONSTANTS_KEY])
             {
-                // copio nel tema i valori di "formatVersion" e "Constants"
+                // copy in the theme the values ​​of "formatVersion" and "Constants"
                 theme[key] = plistDict[key];
             }
             else
             {
-                // inserisco in styles le entries di tutti i dizionari del plist diversi da "Constants"
+                // insert in styles the entries of all plist dictionaries other than "Constants"
                 if ([plistDict[key] isKindOfClass:[NSDictionary class]])
                 {
-                    // ciclo sulle chiavi del dictionary per verificare l'eventuale presenza di doppioni
+                    // cycle on the keys of the dictionary to verify the presence of duplicates
                     for (NSString* styleKey in [plistDict[key] allKeys])
                     {
                         if (styles[styleKey] != nil)
                         {
-                            SDLogModuleWarning(kThemeManagerLogModuleName, @"Chiave duplicata \"%@\" nel dizionario \"%@\" del tema %@. Il valore della chiave duplicata verrà ignorato.", styleKey, key, plistName);
+                            SDLogModuleWarning(kThemeManagerLogModuleName, @"Duplicate key \"%@\" into dictionary \"%@\" of theme %@. Duplica key will be ignored.", styleKey, key, plistName);
                         }
                         else
                         {
@@ -150,19 +150,19 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
                 }
                 else
                 {
-                    // non sono ammessi chiavi generiche con valori diversi da NSDictionary
-                    SDLogModuleError(kThemeManagerLogModuleName, @"Trovato valore non ammesso per la chiave \"%@\" del tema %@", key, plistName);
+                    // Generic keys with values ​​other than NSDictionary are not allowed
+                    SDLogModuleError(kThemeManagerLogModuleName, @"Value not allowed for key \"%@\" in theme %@", key, plistName);
                 }
             }
         }
         
-        // copio styles sotto la generica chiave Styles del tema e lo restituisco
+        // Copy styles under the generic Key Styles theme and return it
         theme[STYLES_KEY] = styles;
         return theme;
     }
     else
     {
-        SDLogModuleError(kThemeManagerLogModuleName, @"Tema non trovato: %@", plistName);
+        SDLogModuleError(kThemeManagerLogModuleName, @"Theme not found: %@", plistName);
     }
     return nil;
 }
@@ -175,7 +175,8 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     {
         for (NSString* plistName in alternativeThemes)
         {
-            // per ogni plist indicato, se esiste, si aggiunge il tema all'array di temi nell'ordine specificato
+            
+            // for each plist indicated, if it exists, add the topic to the array of themes in the specified order
             NSDictionary* theme = [self loadThemeFromPlist:plistName];
             if (theme)
             {
@@ -183,7 +184,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             }
         }
     }
-    // per ultimo si inserisce il tema di default
+    // Finally, you enter the default theme
     [themesNew addObject:defaultTheme];
     themes = [NSArray arrayWithArray:themesNew];
 }
@@ -215,33 +216,33 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     [self applyStyleWithName:styleName toObject:object withVariant:nil];
     if (IS_IPAD)
     {
-        // cerca la versione iPad dello stile e la applica
+        // Looks for the iPad version of the style and applies it
         [self applyStyleWithName:styleName toObject:object withVariant:IPAD_VARIANT];
     }
     else
     {
-        // cerca la versione iPhone dello stile e la applica
+        // Looks for the iPhone style version and applies it
         [self applyStyleWithName:styleName toObject:object withVariant:IPHONE_VARIANT];
     }
 }
 
 /**
  *  @discussion
- *  ATTENZIONE:
- *  Questo metodo pubblico si distingue dal metodo privato constantValueForString: per il fatto che ritorna nil quando la costante non esiste.
- *  Non usare per le logiche interne.
+ *  CAUTION:
+ *  This public method differs from the constantValueForString private method: because it returns nil when the constant does not exist.
+ *  Do not use for internal logic.
  */
 - (id) valueForConstantWithName:(NSString*)constantName
 {
     id constantValue = [self valueForKeyPath:[NSString stringWithFormat:@"%@.%@", CONSTANTS_KEY, constantName]];
     
-    // se non trovo una costante restituisco nil
+    // if I do not find a constant I return nil
     if (!constantValue)
     {
         return nil;
     }
     
-    // se il valore è una stringa, cerca eventuali convenzioni, altrimenti restituisco il valore stesso
+    // If the value is a string, look for any conventions, otherwise I return the value
     if ([constantValue isKindOfClass:[NSString class]])
     {
         return [self valueForConventionalString:constantValue];
@@ -260,8 +261,8 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     
     for (NSDictionary* currentTheme in themes)
     {
-        // si cerca la chiave in tutti i temi impostati, ordinati (l'ultimo è il tema di default)
-        // al primo match si ferma la ricerca e si restituisce il risultato
+        // you search for the key in all the topics you set, sorted (the last is the default theme)
+        // The first match stops the search and returns the result
         value = [currentTheme valueForKeyPath:[NSString stringWithFormat:@"%@.%@", CONSTANTS_KEY, key]];
         if (value)
         {
@@ -334,13 +335,13 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     
     if (variant.length > 0 && [self getThemeStyleForKey:finalStyleName] == nil)
     {
-        // se viene richiesta la variante ma non esiste, ci si ferma
+        // If the variant is requested but does not exist, it stops
         return;
     }
-    // recupera lo stile indicato
+    // retrieves the indicated style
     NSDictionary* style = [self themeStyleForKey:finalStyleName];
     
-    // se non ho trovato uno stile con il nome passato, mi fermo segnalando un errore
+    // If I did not find a style with the past name, I stop signaling an error
     if (!style)
     {
         SDLogModuleError(kThemeManagerLogModuleName, @"Style not found with name '%@'", finalStyleName);
@@ -352,7 +353,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 
 - (id) getThemeStyleForKey:(NSString*)key fromDefaultTheme:(BOOL)fromDefault
 {
-    // lo stile viene cercato nel gruppo "Styles"
+    // style is searched in the "Styles" group
     id style = [self valueForKeyPath:[NSString stringWithFormat:@"%@.%@", STYLES_KEY, key] fromDefaultTheme:fromDefault];
     return style;
 }
@@ -363,11 +364,11 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 /**
- *  Converte i vecchi temi per renderli compatibili con la nuova versione del ThemeManager.
+ * Converts old themes to make them compatible with the new version of ThemeManager.
  *
- *  @param theme Dictionary contenente il vecchio tema.
+ * @param theme Dictionary containing the old theme.
  *
- *  @return Dictionary convertito alle nuove specifiche.
+ * @return dictionary converted to new specifications.
  */
 - (NSDictionary*) convertThemeForCompatibility:(NSDictionary*)theme
 {
@@ -375,39 +376,39 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     
     if (version < 2)
     {
-        // il tema caricato è del vecchio tipo, per compatibilità lo si carica tutto dentro la chiave delle costanti
+        // loaded theme is of the old type, for compatibility it loads everything inside the key of the constants
         return @{ CONSTANTS_KEY: theme };
     }
     return theme;
 }
 
 /**
- *  Interpreta una stringa in formato esadecimale RRGGBBAA o RRGGBB e la converte in un UIColor.
+ * Performs a RRGGBBAA or RRGGBB hexadecimal string and converts it into an UIColor.
  *
- *  @param color Stringa in formato esadecimale RRGGBBAA o RRGGBB.
+ * @param color RRGGBBAA hexadecimal string or RRGGBB.
  *
- *  @return Restituisce un UIColor o nil se la stringa passata non rispetta il formato richiesto.
+ * @return a UIColor or nil if the past string does not meet the required format.
  */
 - (UIColor*) colorForString:(NSString*)color
 {
-    // si interpreta il colore dalla stringa nel formato RRBBGGAA (rosso, verde, blu, alfa)
+    // Interprets the color from the string in the RRBBGGAA format (red, green, blue, alpha)
     if (color.length != 6 && color.length != 8 && color.length != 3 && color.length != 4)
     {
         SDLogModuleError(kThemeManagerLogModuleName, @"Color string %@ in wrong format", color);
         return nil;
     }
     
-    if (color.length == 3) // se si specificano solamente i 3 caratteri RGB, si duplicano e si imposta l'alpha al massimo
+    if (color.length == 3) // If you only specify the 3 RGB characters, they duplicate and set the alpha to the maximum
     {
         const char* chars = [color UTF8String];
         color = [NSString stringWithFormat:@"%c%c%c%c%c%c%@", chars[0], chars[0], chars[1], chars[1], chars[2], chars[2], @"FF"];
     }
-    else if (color.length == 4) // se si specificano solamente 4 caratteri RGB, si duplicano tutti
+    else if (color.length == 4) // If you only specify 4 RGB characters, they all duplicate
     {
         const char* chars = [color UTF8String];
         color = [NSString stringWithFormat:@"%c%c%c%c%c%c%c%c", chars[0], chars[0], chars[1], chars[1], chars[2], chars[2], chars[3], chars[3]];
     }
-    else if (color.length == 6) // se si specificano solamente i 6 caratteri RRGGBB, si appende l'alpha al massimo
+    else if (color.length == 6) // If you only specify the 6 RRGGBB characters, the alpha hangs up to the maximum
     {
         color = [color stringByAppendingString:@"FF"];
     }
@@ -444,8 +445,8 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     {
         for (NSDictionary* currentTheme in themes)
         {
-            // si cerca la chiave in tutti i temi impostati, ordinati (l'utimo è il tema di default)
-            // al primo match si ferma la ricerca e si restituisce il risultato
+            // you search for the key in all the themes you have set, sorted (the last is the default theme)
+            // The first match stops the search and returns the result
             value = [currentTheme valueForKeyPath:keyPath];
             if (value)
             {
@@ -458,15 +459,15 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 /**
- *  Ricerca il stile passato prima nel gruppo Interfaces e (come fallback) nel gruppo Styles del plist.
+ * Search the past style first in the Interfaces group and (as fallback) in the plist Styles group.
  *
- *  @param key Nome dello stile da ricercare.
+ * @param key Name of style to search.
  *
- *  @return Il dictionary dello stile o nil se questo non esiste.
+ * @return The style dictionary or nil if this does not exist.
  */
 - (NSDictionary*) themeStyleForKey:(NSString*)key fromDefaultTheme:(BOOL)fromDefault
 {
-    // lo stile viene cercato nel gruppo "interfaces"
+    // Style is searched in the "interfaces" group
     id style = [self getThemeStyleForKey:key fromDefaultTheme:fromDefault];
     
     if ([style isKindOfClass:[NSString class]])
@@ -499,10 +500,10 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 /**
- *  Applica il dictionary di uno stile all'oggetto passato
+ * Applies the dictionary of a style to the past object
  *
- *  @param style  Lo stile da applicare.
- *  @param object L'oggetto al quale va applicato lo stile.
+ * @param style The style to apply.
+ * @param object The object to which style is to be applied.
  */
 - (void) applyDictionary:(NSDictionary*)style toObject:(NSObject*)object
 {
@@ -516,7 +517,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     }
     else
     {
-        // eventuale eredità dal tema default
+        // eventual inheritance from the default theme
         NSString* inheritstyleName = style[INHERIT_FROM_DEFAULT_THEME];
         if (inheritstyleName.length > 0)
         {
@@ -524,7 +525,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             [self applyDictionary:superstyle toObject:object];
         }
         
-        // applicazione di un eventuale _superstyle
+        // Application of a possible _superstyle
         NSString* superstyleName = style[SUPERSTYLE_KEY];
         
         if (superstyleName.length > 0)
@@ -537,10 +538,10 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             }
         }
         
-        // normalizza lo stile parsando le chiavi
+        // normalize the style by parsing the keys
         NSDictionary* normalizedStyle = [self normalizeDictionary:style];
         
-        // applico i valori alle property elencate nel dictionary
+        // Apply values ​​to the properties listed in the dictionary
         for (NSString* key in normalizedStyle.allKeys)
         {
             if ([key isEqualToString:SUPERSTYLE_KEY] || [key isEqualToString:INHERIT_FROM_DEFAULT_THEME])
@@ -554,12 +555,12 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 /**
- *  Normalizza il dictionary passato parsando tutte le sue chiavi.
- *  Prima divide tutte le chiavi che rapprensentano liste di keyPaths divisi da ",".
- *  Per tutte i keyPaths così ottenuti, ne normalizza il primo livello.
+ * Normalize past dictionary by parsing all its keys.
+ * First divides all keys that are represented by keyPaths lists divided by ",".
+ * For all keypaths thus obtained, normalizes the first level.
  *
- *  Esempio -
- *  Il dictionary:
+ *  Example -
+ * The dictionary:
  *
  *  { "view.layer.borderWidth,view2.layer.borderWidth" : 2} viene trasformato in
  *
@@ -568,24 +569,24 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
  *      "view2" : { "layer.borderWidth" : 2 }
  *  }
  *
- *  @param dictionary Il dictionary da normalizzare.
+ *  @param dictionary dictionary to normalize.
  *
- *  @return Il dictionary normalizzato.
+ *  @return normalized dictionary.
  */
 - (NSDictionary*) normalizeDictionary:(NSDictionary*)dictionary
 {
     NSMutableDictionary* normalizedDictionary = [NSMutableDictionary dictionary];
     
-    // parsa tutti i keyPaths del dictionary passato in argomento
+    // look at all the passwords in the dictionary keyPaths
     for (NSString* originalKeyPaths in dictionary.allKeys)
     {
-        // divide gli array espressi con la ","
+        // divides arrays expressed with ","
         NSArray* keyPaths = [originalKeyPaths componentsSeparatedByString:@","];
         
         for (NSString* keyPath in keyPaths)
         {
-            // se la chiave è un keyPath, ne trova la parte prima del primo "." che diventa la nuova chiave. Il suo valore è un dictionary al quale viene aggiunta come chiave la parte successiva del keyPath originario, associato al valore originario.
-            
+            // if the key is a keyPath, it finds the part before the first "." Which becomes the new key. Its value is a dictionary to which the next part of the original keyPath, associated with the original value, is added as a key.
+
             NSInteger dotIndex = [keyPath rangeOfString:@"."].location;
             if (dotIndex != NSNotFound)
             {
@@ -593,7 +594,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
                 NSString* subKeyPath = [keyPath substringFromIndex:dotIndex + 1];
                 NSDictionary* normalizedValue = nil;
                 
-                // evito che più keyPaths associati alla chiave normalizzata si sovrascrivano tra loro
+                // Avoid that more key-paths associated with the standard key overwrite each other
                 id currentValue = normalizedDictionary[normalizedKey];
                 if (currentValue != nil &&
                     [currentValue isKindOfClass:[NSDictionary class]])
@@ -611,7 +612,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             }
             else
             {
-                // il dictionary è già normalizzato
+                // the dictionary is already normalized
                 normalizedDictionary[keyPath] = dictionary[originalKeyPaths];
             }
         }
@@ -621,38 +622,38 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 /**
- *  Applica un singolo valore ad un determinato keyPath dell'oggetto passato.
+ * Applies a single value to a given keyPath of the past object.
  *
- *  @param value   Il valore da applicare.
- *  @param keyPath Il keyPath della property da valorizzare.
- *  @param object  L'oggetto di cui si vuole valorizzare la property indicata in 'keyPath'.
+ * @param value The value to apply.
+ * @param keyPath The property keyPath to be valued.
+ * @param object The object you want to highlight the property indicated in 'keyPath'.
  */
 - (void) applyValue:(id)value toKeyPath:(NSString*)keyPath ofObject:(NSObject*)object
 {
     @try {
-        // se il value è un dictionary allora si tratta di uno stile innestato, quindi applico lo stile innestato a
+        // if the value is a dictionary then it is a grafted style, so I apply the style grafted to
         if ([value isKindOfClass:[NSDictionary class]])
         {
             NSObject* objectForKeyPath = [object valueForKeyPath:keyPath];
             [self applyDictionary:value toObject:objectForKeyPath];
         }
-        // se il value è una stringa può essere un nome di costante o una delle convenzioni possibili
+        // if the value is a string can be a constant name or one of the possible conventions
         else if ([value isKindOfClass:[NSString class]])
         {
-            // controllo le convenzioni
+            // control the conventions
             id finalValue = [self valueForConventionalString:value];
             if ([finalValue respondsToSelector:@selector(isEqualToString:)] && [finalValue isEqualToString:value])
             {
-                // non ha trovato convenzioni. cerco tra le costanti
+                // did not find any conventions. I look for constants
                 finalValue = [self constantValueForString:value];
             }
             
-            // se il final value è un dictionary di uno stile, allora richiamo il metodo per applicarlo
+            // If the final value is a dictionary of a style, then call the method to apply it
             if ([finalValue isKindOfClass:[NSDictionary class]])
             {
                 [self applyValue:finalValue toKeyPath:keyPath ofObject:object];
             }
-            // altrimenti applico il valore al keypath passato
+            // otherwise I apply the value to the past keypath
             else
             {
 #if DEBUG
@@ -672,7 +673,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
                 NSString* finalClassName = [self classNameForKey:keyPath ofObject:object];
                 if (![finalClassName isEqualToString:initialClassName] && finalClassName != nil && initialClassName != nil)
                 {
-                    // purtroppo non è possibile recuperare la classe della property se la property è nil, quindi si devono saltare i casi in cui initial o final sono nil
+                    // unfortunately it is not possible to retrieve the property class if the property is nil, so you have to skip the cases where initial or final are nil
                     SDLogModuleError(kThemeManagerLogModuleName, @"Possible error: object at keypath %@ of object %@ changed type from %@ to %@", keyPath, NSStringFromClass([object class]), initialClassName, finalClassName);
                 }
 #endif
@@ -699,25 +700,25 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 /**
- *  Cerca il valore di una costante del dictionary Constants o, nel caso non venga trovata, la stringa passata come argomento
+ * Finds the value of a Constant constants constant or, if not found, the string passed as a argument
  *
- *  @param string Il nome della costante da trovare.
+ * @param string The name of the constant to be found.
  *
- *  @return il valore di una costante del dictionary Constants o, nel caso non venga trovata, la stringa passata come argomento
+ * @resurn the value of a Constants constant constant or, if not found, the passed string as argument
  *
- *  @discussion Questo metodo privato si distingue dal metodo pubblico valueForConstantWithName: per il fatto che restituisce la stringa passata nel caso non trovi la costante. Per le logiche interne deve sempre essere usato questo metodo.
+ * @discussion This private method differs from the public method valueForConstantWithName: because it returns the passed string if you do not find the constant. This method must always be used for internal logic.
  */
 - (id) constantValueForString:(NSString*)string
 {
     id constantValue = [self valueForKeyPath:[NSString stringWithFormat:@"%@.%@", CONSTANTS_KEY, string]];
     
-    // se non trovo una costante restituisco string
+    // if I do not find a constant string return
     if (!constantValue)
     {
         return string;
     }
     
-    // se il valore è una stringa, cerca eventuali convenzioni, altrimenti restituisco il valore stesso
+    // If the value is a string, look for any conventions, otherwise I return the value
     if ([constantValue isKindOfClass:[NSString class]])
     {
         return [self valueForConventionalString:constantValue];
@@ -729,17 +730,17 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 /**
- *  Cerca eventuali convenzioni nella stringa passata e restituisce un valore conforme alla convenzione o la stringa passata nel caso in cui non ci siano convenzioni conosciute.
+ * Look for any conventions in the past string and return a conforming value to the convention or the passed string if there are no known conventions.
  *
- *  @param string La stringa da parsare.
+ * @param string The string to be parsed.
  *
- *  @return Un valore conforme alla convenzione trovata. Se trova una convenzione che non viene rispettata o la convenzione NULL restituisce nil. Se non trova alcuna convenzione restituisce string.
+ * @return A value consistent with the agreement found. If it finds a convention that is not respected or the NULL convention nil returns. If it does not find any convention, it returns string.
  */
 - (id) valueForConventionalString:(NSString*)string
 {
     NSString* convention = [SDThemeManager conventionIdentifierInString:string];
     
-    // convenzione style:
+    // style convention:
     if ([STYLE_IDENTIFIERS containsObject:convention])
     {
         @try
@@ -759,12 +760,12 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             return nil;
         }
     }
-    // convenzione font:
+    // font convention:
     if ([FONT_IDENTIFIERS containsObject:convention])
     {
         @try
         {
-            // stringa attesa: "font:<NOME_FONT>,<FONT_SIZE>" o "f:<NOME_FONT>,<FONT_SIZE>"
+            // aspected string: "font:<FONT_NAME>,<FONT_SIZE>" o "f:<FONT_NAME>,<FONT_SIZE>"
             NSString* fontSpecs = [string substringFromIndex:convention.length];
             NSArray* specs = [fontSpecs componentsSeparatedByString:@","];
             NSString* fontName = [self constantValueForString:specs[0]];
@@ -790,7 +791,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             return nil;
         }
     }
-    // convenzione color:
+    // color convention:
     if ([COLOR_IDENTIFIERS containsObject:convention])
     {
         @try
@@ -809,17 +810,17 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             return nil;
         }
     }
-    // convenzione null
+    // null convention
     if ([NULL_IDENTIFIERS containsObject:convention])
     {
         return nil;
     }
-    // convenzione point:
+    // point convention:
     if ([convention isEqualToString:POINT_IDENTIFIER])
     {
         @try
         {
-            // stringa attesa: "point:<X_VALUE>,<Y_VALUE>"
+            // aspected string: "point:<X_VALUE>,<Y_VALUE>"
             NSString* pointSpecs = [string substringFromIndex:convention.length];
             NSArray* specs = [pointSpecs componentsSeparatedByString:@","];
             CGFloat x = [specs[0] floatValue];
@@ -833,12 +834,12 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             return nil;
         }
     }
-    // convenzione size:
+    // size convention:
     if ([convention isEqualToString:SIZE_IDENTIFIER])
     {
         @try
         {
-            // stringa attesa: "size:<WIDTH_VALUE>,<HEIGHT_VALUE>"
+            // aspected string: "size:<WIDTH_VALUE>,<HEIGHT_VALUE>"
             NSString* sizeSpecs = [string substringFromIndex:convention.length];
             NSArray* specs = [sizeSpecs componentsSeparatedByString:@","];
             CGFloat width = [specs[0] floatValue];
@@ -852,12 +853,12 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             return nil;
         }
     }
-    // convenzione rect:
+    // rect convention:
     if ([convention isEqualToString:RECT_IDENTIFIER])
     {
         @try
         {
-            // stringa attesa: "rect:<X_VALUE>,<Y_VALUE>,<WIDTH_VALUE>,<HEIGHT_VALUE>"
+            // aspected string: "rect:<X_VALUE>,<Y_VALUE>,<WIDTH_VALUE>,<HEIGHT_VALUE>"
             NSString* rectSpecs = [string substringFromIndex:convention.length];
             NSArray* specs = [rectSpecs componentsSeparatedByString:@","];
             CGFloat x = [specs[0] floatValue];
@@ -873,12 +874,12 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
             return nil;
         }
     }
-    // convenzione edge:
+    // edge convention:
     if ([convention isEqualToString:EDGE_IDENTIFIER])
     {
         @try
         {
-            // stringa attesa: "edge:<TOP_VALUE>,<LEFT_VALUE>,<BOTTOM_VALUE>,<RIGHT_VALUE>"
+            // aspected string: "edge:<TOP_VALUE>,<LEFT_VALUE>,<BOTTOM_VALUE>,<RIGHT_VALUE>"
             NSString* edgeSpecs = [string substringFromIndex:convention.length];
             NSArray* specs = [edgeSpecs componentsSeparatedByString:@","];
             CGFloat top = [specs[0] floatValue];
@@ -899,15 +900,15 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 /**
- *  Cerca le convenzioni nella stringa passata
+ * Find conventions in the past string
  *
- *  @param string la stringa da parsare
+ * @param string the string to be parsed
  *
- *  @return Restituisce la convenzione trovata o nil.
+ * @return Returns the found agreement or nil.
  */
 + (NSString*) conventionIdentifierInString:(NSString*)string
 {
-    // convenzioni per gli stili
+    // stle convention
     for (NSString* convention in STYLE_IDENTIFIERS)
     {
         if ([string hasPrefix:convention])
@@ -916,7 +917,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         }
     }
     
-    // convenzioni per i font
+    // font convention
     for (NSString* convention in FONT_IDENTIFIERS)
     {
         if ([string hasPrefix:convention])
@@ -925,7 +926,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         }
     }
     
-    // convenzioni per i colori
+    // color convention
     for (NSString* convention in COLOR_IDENTIFIERS)
     {
         if ([string hasPrefix:convention])
@@ -934,7 +935,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         }
     }
     
-    // convenzione per valore nullo
+    // null convention
     for (NSString* convention in NULL_IDENTIFIERS)
     {
         if ([string hasPrefix:convention])
@@ -943,25 +944,25 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         }
     }
     
-    // convenzione per CGPoint
+    // CGPoint convention
     if ([[string lowercaseString] rangeOfString:POINT_IDENTIFIER].location != NSNotFound)
     {
         return POINT_IDENTIFIER;
     }
     
-    // convenzione per CGSize
+    // CGSize convention
     if ([[string lowercaseString] rangeOfString:SIZE_IDENTIFIER].location != NSNotFound)
     {
         return SIZE_IDENTIFIER;
     }
     
-    // convenzione per CGRect
+    // CGRect convention
     if ([[string lowercaseString] rangeOfString:RECT_IDENTIFIER].location != NSNotFound)
     {
         return RECT_IDENTIFIER;
     }
     
-    // convenzione per UIEdgeInsets
+    // UIEdgeInsets convention
     if ([[string lowercaseString] rangeOfString:EDGE_IDENTIFIER].location != NSNotFound)
     {
         return EDGE_IDENTIFIER;
@@ -974,7 +975,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 {
     if (!object || [key containsString:@":"])
     {
-        // si saltano tutte le personalizzazioni legate ad esempio allo stato dei bottoni
+        // Jump all the customizations that are linked, for example, to the status of the buttons
         return nil;
     }
     
@@ -990,7 +991,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     Class class = [value class];
     if ([value isKindOfClass:[UIColor class]])
     {
-        // workaround per la gestione dei diversi tipi di colore impostati di default come sfondo e quelli creati invece dal theme manager
+        // workaround for managing different default color types as background and those created by the theme manager instead
         class = [UIColor class];
     }
     return NSStringFromClass(class);

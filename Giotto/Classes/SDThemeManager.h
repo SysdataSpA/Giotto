@@ -46,13 +46,14 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
 #define THEME_DEFAULT_PLIST_NAME @"theme_default"
 
 /**
- *  Questa classe permette di gestire file di tema con logica di chiave/valore e alcune utility per accedere ai valori tipizzandoli (UIColor, int, float, NSNumber)
- *  Va previsto sempre un tema di default (theme_default.plist)
- *  E' possibile specificare più file di tema in ordine di priorità utilizzando setAlternativeThemes: e specificando un array di NSString, nomi dei differenti file plist
- *  Per modificare la logica di accesso ai temi, vincolandola ad esempio a eventi o stati specifici (es.: utente loggato/non loggato) è necessario sovrascrivere il motodo valueForKey:
+ 
+ * This class allows you to manage key files with key / value logic and some utility to access values ​​by typing them (UIColor, int, float, NSNumber)
+ * Must always be a default theme (theme_default.plist)
+ * You can specify multiple theme files in order of priority using setAlternativeThemes: and specifying an array of NSString, names of different plist files
+ * To modify the logic of access to themes, for example, by specifying events or specific states (eg Logged / Un Logged), you need to overwrite the valueForKey motto:
  *
- *  Si consiglia di utilizzare la libreria ReflectableEnum - https://github.com/fastred/ReflectableEnum - per avere comodi i nomi delle chiavi dei temi, per evitare di dover creare un milione di define (vedere il progetto Zoppas Stone per riferimento). In particolare, creare un ENUM per tipologia (colori, immagini, dimensioni, font, ...)
- *  Per l'accesso al valore contenuto nel file di tema è necessario specificare una chiave
+ * We recommend using the ReflectableEnum library - https://github.com/fastred/ReflectableEnum - to have comfortably key theme names in order to avoid creating a million definitions (see the Zoppas Stone project for reference). Specifically, create an ENUM by typology (colors, images, dimensions, fonts, ...)
+ * To access the value contained in the theme file, you must specify a key
  */
 
 
@@ -68,9 +69,9 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
 }
 
 /**
- *  Invocando questo metodo si permette l'utilizzo di temi alternativi oltre a quello di default, che va specificato comunque nel file theme_default.plist
+ * Invoking this method allows you to use alternative themes other than the default one, which should be specified in the theme theme_default.plist
  *
- *  @param alternativeThemes array contenente i nomi ordinati dei plist contenenti versioni alternative dei temi, senza esntensione; la chiave di ogni valore verrà cercata prima all'interno di essi, nell'ordine con cui sono stati inseriti e, per finire, nel tema di default
+ * @param alternativeThemes array containing the sorted plist names containing alternative versions of the themes, without any extensions; The key of each value will be searched first inside them, in the order in which they were inserted and, finally, in the default theme
  */
 - (void) setAlternativeThemes:(NSArray*)alternativeThemes;
 
@@ -78,12 +79,12 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
 
 #pragma mark - Old methods for retro-compatibility
 /**
- *  A questo metodo accedono tutti gli altri per recuperare informazioni dai file di tema
- *  Sovrascriverlo per personalizzare l'accesso ai temi vincolandolo a eventi o stati specifici (es.: utente loggato/non loggato)
+ * This method accesses all others to retrieve information from theme files
+ * Overwrite it to customize access to topics by binding it to specific events or states (eg Logged / Not Logged In)
  *
- *  @param key chiave da ricercare nel file di tema
+ * @param key to search in the theme file
  *
- *  @return il valore corrispondente alla chiave
+ * @return the value corresponding to the key
  */
 - (id) valueForKey:(NSString*)key;
 - (UIColor*) themeColorForKey:(NSString*)key __deprecated;
@@ -93,19 +94,19 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
 - (int) themeIntegerForKey:(NSString*)key __deprecated;
 #pragma mark - New methods
 /**
- *  Questo metodo va utilizzato solo se si definisce il plist del tema con la struttura Constants-Styles-Interfaces.
+ * This method is only used if you define the theme plist with the Constants-Styles-Interfaces structure.
  *
- *  @param styleName Il nome di un elemento del dictionary Styles o Interfaces del plist.
- *  @param object    L'oggetto al quale va applicato il tema
+ * @param styleName The name of a plist Styles dictionary or Interfaces element.
+ * @param object The object to which the theme is to be applied
  */
 - (void) applyStyleWithName:(NSString*)styleName toObject:(NSObject*)object;
 
 /**
- *  Metodo di utility per recuperare il valore associato ad una costante.
+ * Utility method to retrieve the value associated with a constant.
  *
- *  @param constantName Nome di una costante.
+ * @param constantName Name of a constant.
  *
- *  @return Il valore associato alla costante o nil se la costante non esiste.
+ * @return The value associated with the constant or nil if the constant does not exist.
  */
 - (id) valueForConstantWithName:(NSString*)constantName;
 
