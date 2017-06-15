@@ -31,6 +31,12 @@
 {
     [super viewDidLoad];
     
+    
+//    [[SDThemeManager sharedManager] setValue:@"c:C80028" forConstant:@"COLOR_TEXT_COMMON"];
+//    [[SDThemeManager sharedManager] setValue:@50 forConstant:@"DIMENSION_CORNER_RADIUS_COMMON"];
+    
+    [[SDThemeManager sharedManager] setValue:@"c:000" forStyleWithKeyPath:@"TestViewController.boldLabel.textColor"];
+    
     [self applyStyleToViewController];
 }
 

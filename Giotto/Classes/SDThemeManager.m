@@ -46,6 +46,8 @@
 #define IPHONE_VARIANT           @"IPHONE"
 #define IPAD_VARIANT             @"IPAD"
 
+#define THEME_DYNAMIC_NAME       @"theme_dynamic"
+
 SDThemeManager* themeManagerSharedInstance(){
     return [SDThemeManager sharedManager];
 }
@@ -56,6 +58,20 @@ id SDThemeManagerValueForConstant(NSString* key){
 void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     [themeManagerSharedInstance() applyStyleWithName: key toObject: object];
 }
+
+@interface SDThemeManager ()
+
+
+@property (nonatomic, strong) NSDictionary* defaultTheme;
+@property (nonatomic, strong) NSMutableDictionary* dynamicTheme;
+
+@property (nonatomic, strong) NSArray<NSString*>* alternativeThemesPlist;
+@property (nonatomic, strong) NSArray* themes;
+
+@property (nonatomic, strong) NSString* pathForDynamicTheme;
+
+@end
+
 
 @implementation SDThemeManager
 
@@ -88,30 +104,55 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         
         [[SDLogger sharedLogger] setLogLevel:logLevel forModuleWithName:self.loggerModuleName];
 #endif
-        defaultTheme = [self loadThemeFromPlist:THEME_DEFAULT_PLIST_NAME];
-        if (defaultTheme)
-        {
-            themes = @[defaultTheme];
-        }
-        else
-        {
-            SDLogModuleError(kThemeManagerLogModuleName, @"Default theme not found");
-        }
+        
+        self.pathForDynamicTheme = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:THEME_DYNAMIC_NAME];
+        [self loadDefaultTheme];
+        
     }
     return self;
 }
 
 
-/**
- * Load the theme from the plist with the given name, make the necessary conversions and changes and return it.
- *
- * @param plistName the name of the plist from which to upload the theme (without the extension)
- *
- * @return The theme dictionary loaded or nil
- */
+- (void) loadDefaultTheme
+{
+    self.defaultTheme = [self loadThemeFromPlist:THEME_DEFAULT_PLIST_NAME];
+    if (self.defaultTheme)
+    {
+        self.themes = @[self.dynamicTheme, self.defaultTheme];
+    }
+    else
+    {
+        SDLogModuleError(kThemeManagerLogModuleName, @"Default theme not found");
+    }
+}
+
+- (NSMutableDictionary *)dynamicTheme
+{
+    if(!_dynamicTheme)
+    {
+        _dynamicTheme = [NSMutableDictionary dictionaryWithDictionary:[self loadThemeFromPlistAtPath:self.pathForDynamicTheme]];
+        [_dynamicTheme setValue:@2 forKey:@"formatVersion"];
+    }
+    return _dynamicTheme;
+}
+
 - (NSDictionary*) loadThemeFromPlist:(NSString*)plistName
 {
     NSString* path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+    return [self loadThemeFromPlistAtPath:path];
+}
+
+
+
+/**
+ * Load the theme from the plist with the given name, make the necessary conversions and changes and return it.
+ *
+ * @param path the path of the plist from which to upload the theme (without the extension)
+ *
+ * @return The theme dictionary loaded or nil
+ */
+- (NSDictionary*) loadThemeFromPlistAtPath:(NSString*)path
+{
     if ([[NSFileManager defaultManager] fileExistsAtPath:path])
     {
         // convert the theme for reasons of retrocompatibility
@@ -140,7 +181,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
                     {
                         if (styles[styleKey] != nil)
                         {
-                            SDLogModuleWarning(kThemeManagerLogModuleName, @"Duplicate key \"%@\" into dictionary \"%@\" of theme %@. Duplica key will be ignored.", styleKey, key, plistName);
+                            SDLogModuleWarning(kThemeManagerLogModuleName, @"Duplicate key \"%@\" into dictionary \"%@\" of theme %@. Duplica key will be ignored.", styleKey, key, path.lastPathComponent);
                         }
                         else
                         {
@@ -151,7 +192,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
                 else
                 {
                     // Generic keys with values ​​other than NSDictionary are not allowed
-                    SDLogModuleError(kThemeManagerLogModuleName, @"Value not allowed for key \"%@\" in theme %@", key, plistName);
+                    SDLogModuleError(kThemeManagerLogModuleName, @"Value not allowed for key \"%@\" in theme %@", key, path.lastPathComponent);
                 }
             }
         }
@@ -162,20 +203,20 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     }
     else
     {
-        SDLogModuleError(kThemeManagerLogModuleName, @"Theme not found: %@", plistName);
+        SDLogModuleError(kThemeManagerLogModuleName, @"Theme not found: %@", path.lastPathComponent);
     }
     return nil;
 }
 
-- (void) setAlternativeThemes:(NSArray*)alternativeThemes
+- (void) setAlternativeThemes:(NSArray<NSString*>*)alternativeThemes
 {
-    alternativeThemesPlist = alternativeThemes;
+    self.alternativeThemesPlist = alternativeThemes;
     NSMutableArray* themesNew = [NSMutableArray array];
+    [themesNew addObject:self.dynamicTheme];
     if (alternativeThemes.count > 0)
     {
         for (NSString* plistName in alternativeThemes)
         {
-            
             // for each plist indicated, if it exists, add the topic to the array of themes in the specified order
             NSDictionary* theme = [self loadThemeFromPlist:plistName];
             if (theme)
@@ -185,8 +226,8 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         }
     }
     // Finally, you enter the default theme
-    [themesNew addObject:defaultTheme];
-    themes = [NSArray arrayWithArray:themesNew];
+    [themesNew addObject:self.defaultTheme];
+    self.themes = [NSArray arrayWithArray:themesNew];
 }
 
 #pragma mark - SDLoggerModuleProtocol
@@ -259,7 +300,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 {
     NSString* value;
     
-    for (NSDictionary* currentTheme in themes)
+    for (NSDictionary* currentTheme in self.themes)
     {
         // you search for the key in all the topics you set, sorted (the last is the default theme)
         // The first match stops the search and returns the result
@@ -439,11 +480,11 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     
     if (fromDefault)
     {
-        value = [defaultTheme valueForKeyPath:keyPath];
+        value = [self.defaultTheme valueForKeyPath:keyPath];
     }
     else
     {
-        for (NSDictionary* currentTheme in themes)
+        for (NSDictionary* currentTheme in self.themes)
         {
             // you search for the key in all the themes you have set, sorted (the last is the default theme)
             // The first match stops the search and returns the result
@@ -995,6 +1036,79 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         class = [UIColor class];
     }
     return NSStringFromClass(class);
+}
+
+#pragma mark Dynamic Theme
+
+- (void) setValue:(id)value forConstant:(NSString*)constant
+{
+    if(!constant)
+    {
+        SDLogError(@"Can't set value %@ for missing constant", value);
+        return;
+    }
+    
+    NSString* constantPath = [NSString stringWithFormat:@"%@.%@", CONSTANTS_KEY, constant];
+    [self setDynamicValue:value forKeyPath:constantPath intoDictionary:self.dynamicTheme];
+}
+
+
+- (void) setValue:(id)value forStyleWithKeyPath:(NSString*)styleKeypath
+{
+    if(!styleKeypath)
+    {
+        SDLogError(@"Can't set value %@ for missing constant", value);
+        return;
+    }
+    
+    NSString* globalPath = [NSString stringWithFormat:@"%@.%@", STYLES_KEY, styleKeypath];
+    [self setDynamicValue:value forKeyPath:globalPath intoDictionary:self.dynamicTheme];
+}
+
+
+- (void) setDynamicValue:(id)value forKeyPath:(nonnull NSString *)keyPath intoDictionary:(NSMutableDictionary*)dictionary
+{
+    if(![self isValidDynamicValue:value])
+    {
+        SDLogError(@"Can't set value %@: unsupported kind of data. Supported values are NSString, NSNumber, NSDictionary", value);
+        return;
+    }
+    
+    NSMutableArray* components = [keyPath componentsSeparatedByString:@"."].mutableCopy;
+    NSString* key = components.firstObject;
+    
+    [components removeObjectAtIndex:0];
+    
+    if(components.count == 0)
+    {
+        [dictionary setValue:value forKey:key];
+    }
+    else
+    {
+        id currentValue = [dictionary valueForKey:key];
+        NSMutableDictionary* newDictionary;
+        if([currentValue isKindOfClass:[NSDictionary class]])
+        {
+            newDictionary = [NSMutableDictionary dictionaryWithDictionary:currentValue];
+        }
+        else
+        {
+            newDictionary = [NSMutableDictionary new];
+        }
+        [dictionary setValue:newDictionary forKey:key];
+        
+        [self setDynamicValue:value forKeyPath:[components componentsJoinedByString:@"."] intoDictionary:newDictionary];
+    }
+}
+       
+- (BOOL) isValidDynamicValue:(id)value
+{
+    if([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSDictionary class]])
+    {
+        return YES;
+    }
+    
+    return NO;
 }
 
 @end

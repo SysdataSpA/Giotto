@@ -62,18 +62,14 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
 #else
 @interface SDThemeManager : NSObject
 #endif
-{
-    NSDictionary* defaultTheme;
-    NSArray* alternativeThemesPlist;
-    NSArray* themes;
-}
+
 
 /**
  * Invoking this method allows you to use alternative themes other than the default one, which should be specified in the theme theme_default.plist
  *
  * @param alternativeThemes array containing the sorted plist names containing alternative versions of the themes, without any extensions; The key of each value will be searched first inside them, in the order in which they were inserted and, finally, in the default theme
  */
-- (void) setAlternativeThemes:(NSArray*)alternativeThemes;
+- (void) setAlternativeThemes:(NSArray<NSString*>*)alternativeThemes;
 
 + (instancetype) sharedManager;
 
@@ -92,6 +88,9 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
 - (NSNumber*) themeNumberForKey:(NSString*)key __deprecated;
 - (float) themeFloatForKey:(NSString*)key __deprecated;
 - (int) themeIntegerForKey:(NSString*)key __deprecated;
+
+
+
 #pragma mark - New methods
 /**
  * This method is only used if you define the theme plist with the Constants-Styles-Interfaces structure.
@@ -110,4 +109,12 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
  */
 - (id) valueForConstantWithName:(NSString*)constantName;
 
+
+
+
+#pragma mark Dynamic Theme
+
+- (void) setValue:(id)value forConstant:(NSString*)constant;
+
+- (void) setValue:(id)value forStyleWithKeyPath:(NSString*)styleKeypath;
 @end
