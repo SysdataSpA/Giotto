@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Giotto_Example' do
+  pod 'Giotto', :path => '../'
+
+  target 'Giotto_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

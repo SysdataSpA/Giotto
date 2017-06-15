@@ -1,0 +1,18 @@
+PODS:
+  - Giotto (0.1.0):
+    - Giotto/Core (= 0.1.0)
+  - Giotto/Core (0.1.0)
+
+DEPENDENCIES:
+  - Giotto (from `../`)
+
+EXTERNAL SOURCES:
+  Giotto:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Giotto: beb92b584454e90f25654f931b5e2b3dc6bce641
+
+PODFILE CHECKSUM: b057851c02bb1391610bd1626782d0b29aaf59c3
+
+COCOAPODS: 1.2.1
