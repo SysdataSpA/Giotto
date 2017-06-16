@@ -92,11 +92,11 @@ Conventions `_superstyle"`, `style:` and `font:` are explained in section [*Conv
 
 In order to speed up the drafting of the themes and to allow the handling of particular but frequent cases, the following conventions have been defined:
 
-#### Conventions for keys
+## Conventions for keys
  
 > * `_superstyle` : Can be entered in the dictionary of a style to indicate that the style inherits from another style. When the "parent" style is applied before the "child" style, you can overwrite the keyPaths in the "child". You can inherit from multiple styles by sequentially dividing them by a ",". The styles that are indicated will be applied in order, so the style shown after overwriting the value of the keyPaths that it has in common with a style that precedes it in the list. 
 
-#### Conventions for values
+## Conventions for values
  
 > *	`style:style_name1,style_name2`:  The property indicated in the key is stylized with the styles listed on the list. The styles shown must be present in one of the styles groups. Abbreviated version `s: style_name1,style_name2`. As `_superstyle` the styles shown are applied in order.
 > * `font:font_name, font_size`: nstantiates a UIFont and sets it as the value of the property specified in the key. This convention can also be used in Constants. Short version `f: font_name, font_size`. 
@@ -114,7 +114,7 @@ In order to speed up the drafting of the themes and to allow the handling of par
 > * `rect:x,y,width,height`: set the property as a CGRect with values ​​x, y, width, and height. Values ​​are interpreted as float.
 > * `edge:top,left,bottom,right`: set the property as a UIEdgeInsets with top, left, bottom, and right values. Values ​​are interpreted as float.
 
-### Keys of a style
+## Keys of a style
 
 As already mentioned, a style looks like a dictionary in one of the styles groups and can be applied to any NSObject (typically an interface element).
 The dictionary keys can be:
@@ -126,8 +126,8 @@ The dictionary keys can be:
 
 The property indicated may also be an NSArray (such as an IBOutletCollection). In this case, the value is applied to all the objects in the array.
 
-Application of a style
-=========================
+## Application of a style
+
 To apply a style declared in Plist to an object, simply use the following line of code:
 
 ```
@@ -136,8 +136,8 @@ To apply a style declared in Plist to an object, simply use the following line o
 
 The indicated object may also be **self**.
 
-Special Property Management
-=====================================
+## Special Property Management
+
 The library contains a category *NSObject+ThemeManager* which exposes the method:
 
 ```
@@ -163,8 +163,7 @@ The method `shouldApplyThemeCustomizationForKeyPath:` should return `YES`only fo
 
 The method `applyCustomizationOfThemeValue:forKeyPath:` must contain the custom implementation for the keyPaths accepted by the previous method.
 
-Alternative themes
-=================
+## Alternative themes
 
 The ThemeManager necessarily requires a **default** theme and optionally one or more alternative styles can be indicated by the method:
 
@@ -177,10 +176,45 @@ When you try to apply a style, ThemeManager looks for it in the first alternativ
 
 **Order is important!!!**
 
-Backwards compatibility
-==================
+## Backwards compatibility
 
 Version 2 of the ThemeManager is backward compatible. To handle retrocompatibility with old Plist formats, new ones must necessarily contain the key-value pair:
 `“formatVersion” : 2`
+
+
+## Dynamic behaviour
+
+The following methods can change the theme and constant values ​​in a programmatic way.
+
+Modify the value of a constant in a programmatic way. 
+```
+- (void) modifyConstant:(NSString*)constant withValue:(id)value
+```
+
+Modify the value for a style at a given path in a programmatic way.
+```
+- (void) modifyStlye:(NSString*)style forKeyPath:(NSString*)keyPath withValue:(id)value
+```
+**ATTENTION**: 
+ - The change will only take effect for the duration of the app session. If you want to see the modify also after restarting the app, persist the modifies using **synchronizeModifies** method
+ - By default, the whole style is replaced with the new values ​​and past keypaths.
+If you want to modify only specific values and maintain all the other keypath values ​​set in the basic themes, active the inheritance on the style using the method **modifyStyle:inheritanceEnable:**
+
+By default, modifying a style setting some keypaths replace the whole style in the bundle with only the new keypaths​​.
+ If you want to mantain all the other keypath values ​​set in the basic themes, active the inheritance
+```
+- (void) modifyStyle:(NSString*)style inheritanceEnable:(BOOL)inheritanceEnable
+```
+
+
+To persist all the modifies set programmatically to retreive them also at next app restart. Otherwise all the modifies will be available for the current session.
+```
+- (void) synchronizeModifies
+```
+
+To reset all the modifies set programmatically (using modifyConstant:withValue: or modifyStlye:forKeyPath:withValue:)
+```
+- (void) resetModifies
+```
 
 
