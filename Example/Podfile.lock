@@ -1,18 +1,23 @@
 PODS:
-  - Giotto (0.1.0):
-    - Giotto/Core (= 0.1.0)
+  - Blabber (1.1.3):
+    - Blabber/Core (= 1.1.3)
+  - Blabber/Core (1.1.3)
+  - Giotto/Blabber (0.1.0):
+    - Blabber
+    - Giotto/Core
   - Giotto/Core (0.1.0)
 
 DEPENDENCIES:
-  - Giotto (from `../`)
+  - Giotto/Blabber (from `../`)
 
 EXTERNAL SOURCES:
   Giotto:
     :path: ../
 
 SPEC CHECKSUMS:
+  Blabber: 669f61f7d0a17ed412cb798c1056bb2cc5e88579
   Giotto: beb92b584454e90f25654f931b5e2b3dc6bce641
 
-PODFILE CHECKSUM: b057851c02bb1391610bd1626782d0b29aaf59c3
+PODFILE CHECKSUM: 6860ee30b592780b8c79b18b53f2c0b392a2ce71
 
 COCOAPODS: 1.2.1

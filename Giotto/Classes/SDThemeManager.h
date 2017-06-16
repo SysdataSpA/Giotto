@@ -109,7 +109,18 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
  */
 - (id) valueForConstantWithName:(NSString*)constantName;
 
+#pragma mark Utils
 
+
+/**
+ * Debug method that returns the merged dictionary for a given style. It shows alla merged values as you aspect to be performed when the style will be applied. The dictionary is merged following the inheritance and the superstyle chain.
+ *
+ * @param style name of the style
+ *
+ * @return the merged dictionary for a given style
+ */
+
+- (NSDictionary*) mergedValueForStyle:(NSString*)style;
 
 
 #pragma mark Dynamic behaviour
@@ -144,6 +155,12 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
  */
 - (void) modifyStlye:(NSString*)style forKeyPath:(NSString*)keyPath withValue:(id)value;
 
+// getter methods
+- (id) modifiedValuesForConstant:(NSString*)constant;
+- (id) modifiedValueForStyle:(NSString*)style;
+- (id) modifiedValueForStyle:(NSString*)style atKeyPath:(NSString*)keyPath;
+
+
 /**
  *  By default, modifying a style setting some keypaths replace the whole style in the bundle with only the new keypaths​​.
  *  If you want to mantain all the other keypath values ​​set in the basic themes, active the inheritance
@@ -152,6 +169,9 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
  * @param inheritanceEnable the enable state. If YES will be maintained all the keypaths for the given style set in the bundle themes. If NO the given style willl be replaced with the only keypaths added programmatically (using modifyStlye:forKeyPath:withValue:)
  */
 - (void) modifyStyle:(NSString*)style inheritanceEnable:(BOOL)inheritanceEnable;
+
+// getter method
+- (BOOL) isInheritanceEnabledForStyle:(NSString*)style;
 
 /**
  *  This method persists all the modifies set programmatically to retreive them also at next app restart. Otherwise all the modifies will be available for the current session.

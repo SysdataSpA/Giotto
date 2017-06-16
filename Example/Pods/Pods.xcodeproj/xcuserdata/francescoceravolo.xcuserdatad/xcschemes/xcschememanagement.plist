@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Blabber.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Giotto.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8BA42AED86DEAF3D7D1A151884B92C2</key>
+		<key>4D15E9BDBD6AEEAA3366ECA54B7A51B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BAA72B08ED1AEBF159F005FDDC3B762C</key>
+		<key>4E374A2EDB8A6DD35E4D88D28B80F29F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7F92C998C07C5F81413A8E0AB988242</key>
 		<dict>
 			<key>primary</key>
 			<true/>

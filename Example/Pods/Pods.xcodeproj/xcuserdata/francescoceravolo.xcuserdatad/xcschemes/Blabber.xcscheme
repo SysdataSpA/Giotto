@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4E374A2EDB8A6DD35E4D88D28B80F29F'
-               BlueprintName = 'Giotto'
+               BlueprintIdentifier = '4D15E9BDBD6AEEAA3366ECA54B7A51B0'
+               BlueprintName = 'Blabber'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Giotto.framework'>
+               BuildableName = 'Blabber.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

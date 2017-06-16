@@ -22,8 +22,10 @@
 		<string>c:FFF</string>
 		<key>COLOR_BORDER_TEXTFIELD</key>
 		<string>c:AAA</string>
-		<key>COLOR_SEPARATOR</key>
-		<string>c:AAA</string>
+		<key>COLOR_BUTTON_BACKGROUND</key>
+		<string>c:5235FF</string>
+		<key>COLOR_BUTTON_BACKGROUND_SELECTED</key>
+		<string>c:FC211D</string>
 		<key>COLOR_HIDER_BACKGROUND</key>
 		<string>c:00000077</string>
 		<key>COLOR_OK</key>
@@ -101,30 +103,29 @@
 		<key>CommonColoredButton</key>
 		<dict>
 			<key>backgroundColor</key>
-			<string>COLOR_BRAND</string>
+			<string>COLOR_BUTTON_BACKGROUND</string>
 			<key>titleColor</key>
-			<string>COLOR_TEXT_COMMON_CONTRAST</string>
-			<key>tintColor</key>
-			<string>COLOR_TEXT_COMMON_CONTRAST</string>
+			<string>c:FFF</string>
+			<key>selected:titleColor</key>
+			<string>c:000</string>
 			<key>font</key>
-			<string>f:FONT_BOLD,20</string>
+			<string>f:FONT_BOLD,12</string>
 			<key>layer.cornerRadius</key>
-			<string>DIMENSION_CORNER_RADIUS_COMMON</string>
+			<string>5</string>
+		</dict>
+		<key>CommonColoredButtonSelected</key>
+		<dict>
+			<key>_superstyle</key>
+			<string>CommonColoredButton</string>
+			<key>backgroundColor</key>
+			<string>COLOR_BUTTON_BACKGROUND_SELECTED</string>
 		</dict>
 		<key>CommonColoredInverseButton</key>
 		<dict>
 			<key>_superstyle</key>
 			<string>CommonColoredButton</string>
 			<key>backgroundColor</key>
-			<string>COLOR_CLEAR</string>
-			<key>titleColor</key>
-			<string>COLOR_BRAND</string>
-			<key>tintColor</key>
-			<string>COLOR_BRAND</string>
-			<key>layer.borderWidth</key>
-			<integer>2</integer>
-			<key>layer.borderColor</key>
-			<string>COLOR_BRAND</string>
+			<string>COLOR_WARNING</string>
 		</dict>
 		<key>CommonTextualButton</key>
 		<dict>
@@ -156,6 +157,10 @@
 				<key>textColor</key>
 				<string>c:C80028</string>
 			</dict>
+			<key>modifyButton,inheritanceButton,saveButton</key>
+			<string>s:CommonColoredButton</string>
+			<key>resetButton</key>
+			<string>s:CommonColoredInverseButton</string>
 		</dict>
 	</dict>
 </dict>

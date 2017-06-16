@@ -22,6 +22,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *styledLabel;
 @property (weak, nonatomic) IBOutlet UILabel *boldLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *modifyButton;
+@property (weak, nonatomic) IBOutlet UIButton *inheritanceButton;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
+@property (weak, nonatomic) IBOutlet UIButton *resetButton;
 
 @end
 
@@ -31,20 +35,14 @@
 {
     [super viewDidLoad];
     
-    
-//    [[SDThemeManager sharedManager] modifyConstant:@"COLOR_TEXT_COMMON" withValue:@"c:C80028"];
-//    [[SDThemeManager sharedManager] modifyConstant:@"DIMENSION_CORNER_RADIUS_COMMON" withValue:@30];
-//
-//    [[SDThemeManager sharedManager] modifyStlye:@"TestViewController" forKeyPath:@"boldLabel.textColor" withValue:@"c:000"];
-//    [[SDThemeManager sharedManager] modifyStyle:@"TestViewController" inheritanceEnable:NO];
-    [[SDThemeManager sharedManager] resetModifies];
-    
     [self applyStyleToViewController];
 }
 
 - (void) applyStyleToViewController
 {
+    self.inheritanceButton.selected = [[SDThemeManager sharedManager] isInheritanceEnabledForStyle:@"TestViewController"];
     SDThemeManagerApplyStyle(@"TestViewController", self);
+    SDThemeManagerApplyStyle(self.inheritanceButton.selected ? @"CommonColoredButtonSelected" : @"CommonColoredButton", self.inheritanceButton);
 }
 
 - (IBAction)segmentControlValueChanged:(UISegmentedControl *)sender
@@ -60,4 +58,41 @@
     
     [self applyStyleToViewController];
 }
+
+- (IBAction)modifyStyleTapped:(UIButton*)sender
+{
+    NSUInteger randomColor1 = arc4random_uniform(16777216);
+    NSString* exString1 = [NSString stringWithFormat:@"c:%02lx",(unsigned long)randomColor1];
+    
+    NSUInteger randomColor2 = arc4random_uniform(16777216);
+    NSString* exString2 = [NSString stringWithFormat:@"c:%02lx",(unsigned long)randomColor2];
+    
+    [[SDThemeManager sharedManager] modifyConstant:@"COLOR_BACKGROUND_COMMON" withValue:exString1];
+    [[SDThemeManager sharedManager] modifyConstant:@"DIMENSION_CORNER_RADIUS_COMMON" withValue:@30];
+    [[SDThemeManager sharedManager] modifyStlye:@"TestViewController" forKeyPath:@"boldLabel.textColor" withValue:exString2];
+    
+    [self applyStyleToViewController];
+}
+
+- (IBAction)activeInheritanceTapped:(UIButton *)sender
+{
+    [[SDThemeManager sharedManager] modifyStyle:@"TestViewController" inheritanceEnable:!sender.selected];
+    [self applyStyleToViewController];
+    
+    NSDictionary* dict = [[SDThemeManager sharedManager] mergedValueForStyle:@"TestViewController"];
+    NSLog(@"%@", dict);
+}
+
+- (IBAction)peristModifiesTapped:(UIButton *)sender
+{
+    [[SDThemeManager sharedManager] synchronizeModifies];
+    [self applyStyleToViewController];
+}
+
+- (IBAction)resetModifiesTapped:(UIButton *)sender
+{
+    [[SDThemeManager sharedManager] resetModifies];
+    [self applyStyleToViewController];
+}
+
 @end

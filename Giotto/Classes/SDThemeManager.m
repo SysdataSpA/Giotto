@@ -99,7 +99,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 #if BLABBER
         SDLogLevel logLevel = SDLogLevelWarning;
 #if DEBUG
-        logLevel = SDLogLevelVerbose;
+        logLevel = SDLogLevelInfo;
 #endif
         
         [[SDLogger sharedLogger] setLogLevel:logLevel forModuleWithName:self.loggerModuleName];
@@ -1038,6 +1038,68 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     return NSStringFromClass(class);
 }
 
+#pragma mark Utils
+
+- (NSDictionary*) mergedValueForStyle:(NSString*)style
+{
+    if(!style)
+    {
+        SDLogError(@"Can't retreive merged value for missing style");
+        return nil;
+    }
+    NSString* keyPath = [NSString stringWithFormat:@"%@.%@", STYLES_KEY, style];
+    
+    NSMutableDictionary* mergedDictionary = [NSMutableDictionary new];
+    [self mergedStyleDictionary:mergedDictionary forKeypath:keyPath insideThemes:self.themes];
+    return mergedDictionary;
+}
+
+- (void) mergedStyleDictionary:(NSMutableDictionary*)styleDictionary forKeypath:(NSString*)keypath insideThemes:(NSArray<NSDictionary*>*)themes
+{
+    NSDictionary* theme = themes.firstObject;
+    NSDictionary* currentThemeStyle = [theme valueForKeyPath:keypath];
+    
+    NSString* inheritedStyle = [currentThemeStyle valueForKey:INHERIT_FROM_DEFAULT_THEME];
+    if(inheritedStyle.length > 0 && themes.count > 1)
+    {
+        // inheritance styles works only on default_theme
+        NSString* inheritedKeypath = [NSString stringWithFormat:@"%@.%@", STYLES_KEY, inheritedStyle];
+        [self mergedStyleDictionary:styleDictionary forKeypath:inheritedKeypath insideThemes:@[themes.lastObject]];
+    }
+    
+    NSString* superStyle = [currentThemeStyle valueForKey:SUPERSTYLE_KEY];
+    if(superStyle.length > 0)
+    {
+        // try superstyle on current theme
+        NSString* superstyleKeypath = [NSString stringWithFormat:@"%@.%@", STYLES_KEY, superStyle];
+        if(superstyleKeypath.length > 0)
+        {
+            [self mergedStyleDictionary:styleDictionary forKeypath:superstyleKeypath insideThemes:themes];
+        }
+        else
+        {
+            // if not exist goes back to previous themes
+            if(themes.count > 1)
+            {
+                NSMutableArray* remainingThemes = themes.mutableCopy;
+                [remainingThemes removeObjectAtIndex:0];
+                [self mergedStyleDictionary:styleDictionary forKeypath:superstyleKeypath insideThemes:remainingThemes];
+            }
+        }
+    }
+    
+    // set all keys (expect _inherit and _superstyle)
+    NSMutableArray<NSString*>* keyToSet = currentThemeStyle.allKeys.mutableCopy;
+    [keyToSet removeObjectsInArray:@[INHERIT_FROM_DEFAULT_THEME, SUPERSTYLE_KEY]];
+    for(NSString* key in keyToSet)
+    {
+        id value = currentThemeStyle[key];
+        [styleDictionary setValue:value forKey:key];
+    }
+}
+    
+
+
 #pragma mark Dynamic behaviour
 
 - (void) modifyConstant:(NSString*)constant withValue:(id)value
@@ -1069,6 +1131,39 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     
     NSString* globalPath = [NSString stringWithFormat:@"%@.%@.%@", STYLES_KEY, style, keyPath];
     [self setDynamicValue:value forKeyPath:globalPath intoDictionary:self.dynamicTheme];
+}
+
+- (id) modifiedValuesForConstant:(NSString*)constant
+{
+    if(!constant)
+    {
+        SDLogError(@"Can't get value for missing constant");
+        return nil;
+    }
+    
+    NSString* constantPath = [NSString stringWithFormat:@"%@.%@", CONSTANTS_KEY, constant];
+    return [self.dynamicTheme valueForKeyPath:constantPath];
+}
+
+- (id) modifiedValueForStyle:(NSString*)style
+{
+    return [self modifiedValueForStyle:style atKeyPath:nil];
+}
+
+- (id) modifiedValueForStyle:(NSString*)style atKeyPath:(NSString*)keyPath
+{
+    if(!style)
+    {
+        SDLogError(@"Can't get value for missing style");
+        return nil;
+    }
+    
+    NSMutableString* globalPath = [NSMutableString stringWithFormat:@"%@.%@", STYLES_KEY, style];
+    if(keyPath.length > 0)
+    {
+        [globalPath stringByAppendingFormat:@".%@", keyPath];
+    }
+    return [self.dynamicTheme valueForKeyPath:globalPath];
 }
 
 
@@ -1153,6 +1248,17 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     [self setDynamicValue:inheritanceValue forKeyPath:globalPath intoDictionary:self.dynamicTheme];
 }
 
+- (BOOL) isInheritanceEnabledForStyle:(NSString*)style
+{
+    if(!style)
+    {
+        SDLogError(@"Can't retreive inheritance for missing style");
+        return NO;
+    }
+    NSString* globalPath = [NSString stringWithFormat:@"%@.%@.%@", STYLES_KEY, style, INHERIT_FROM_DEFAULT_THEME];
+    id value = [self valueForKeyPath:globalPath];
+    return value != nil;
+}
 
 - (void) synchronizeModifies
 {

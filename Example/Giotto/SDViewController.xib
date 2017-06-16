@@ -13,6 +13,10 @@
             <connections>
                 <outlet property="boldLabel" destination="xcg-Ld-NGO" id="U9V-ds-oFj"/>
                 <outlet property="containerView" destination="wrT-oS-AOT" id="pmi-m8-iBa"/>
+                <outlet property="inheritanceButton" destination="mp2-4M-rJS" id="Xuu-Iq-KzO"/>
+                <outlet property="modifyButton" destination="aie-hT-Y4v" id="4Ez-kQ-hYU"/>
+                <outlet property="resetButton" destination="8UP-YO-FM1" id="0Gr-JG-JaX"/>
+                <outlet property="saveButton" destination="Y74-lE-sU3" id="PLb-h4-pgJ"/>
                 <outlet property="styledLabel" destination="ORd-MH-WYM" id="2i1-zU-nXs"/>
                 <outlet property="view" destination="iN0-l3-epB" id="7fM-ln-8M0"/>
             </connections>
@@ -47,15 +51,71 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imd-FU-u72">
+                            <rect key="frame" x="8" y="88" width="319" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aie-hT-Y4v">
+                            <rect key="frame" x="20" y="466" width="138" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.48306020589999998" blue="0.1624366682" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Modify style"/>
+                            <connections>
+                                <action selector="modifyStyleTapped:" destination="-1" eventType="touchUpInside" id="8PP-MK-hP6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp2-4M-rJS">
+                            <rect key="frame" x="177.5" y="466" width="137.5" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.48306020589999998" blue="0.1624366682" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Active inheritance"/>
+                            <state key="selected" title="Disable inheritance"/>
+                            <connections>
+                                <action selector="activeInheritanceTapped:" destination="-1" eventType="touchUpInside" id="N7p-sC-Z6Z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y74-lE-sU3">
+                            <rect key="frame" x="20" y="520" width="137.5" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.48306020589999998" blue="0.1624366682" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Persist modifies"/>
+                            <connections>
+                                <action selector="peristModifiesTapped:" destination="-1" eventType="touchUpInside" id="A7C-R1-QsN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UP-YO-FM1">
+                            <rect key="frame" x="177.5" y="520" width="137.5" height="34"/>
+                            <color key="backgroundColor" red="1" green="0.48306020589999998" blue="0.1624366682" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Reset modifies"/>
+                            <connections>
+                                <action selector="resetModifiesTapped:" destination="-1" eventType="touchUpInside" id="2Qd-0a-nD6"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="aie-hT-Y4v" firstAttribute="leading" secondItem="wrT-oS-AOT" secondAttribute="leading" constant="20" id="781-VX-FnT"/>
+                        <constraint firstItem="imd-FU-u72" firstAttribute="trailing" secondItem="ORd-MH-WYM" secondAttribute="trailing" id="8fA-tx-P4N"/>
+                        <constraint firstItem="aie-hT-Y4v" firstAttribute="top" secondItem="mp2-4M-rJS" secondAttribute="top" id="ALd-Im-U2X"/>
+                        <constraint firstItem="imd-FU-u72" firstAttribute="top" secondItem="xcg-Ld-NGO" secondAttribute="bottom" constant="30" id="COI-ss-nW4"/>
+                        <constraint firstItem="8UP-YO-FM1" firstAttribute="width" secondItem="Y74-lE-sU3" secondAttribute="width" id="Dnw-6G-xmD"/>
+                        <constraint firstItem="Y74-lE-sU3" firstAttribute="leading" secondItem="wrT-oS-AOT" secondAttribute="leading" constant="20" id="G2k-lk-tHv"/>
+                        <constraint firstItem="Y74-lE-sU3" firstAttribute="bottom" secondItem="8UP-YO-FM1" secondAttribute="bottom" id="TzB-ne-sz3"/>
                         <constraint firstItem="ORd-MH-WYM" firstAttribute="top" secondItem="wrT-oS-AOT" secondAttribute="top" constant="8" id="YDf-1c-LgF"/>
                         <constraint firstItem="xcg-Ld-NGO" firstAttribute="trailing" secondItem="ORd-MH-WYM" secondAttribute="trailing" id="YYd-Hi-EFI"/>
                         <constraint firstItem="xcg-Ld-NGO" firstAttribute="leading" secondItem="ORd-MH-WYM" secondAttribute="leading" id="e2U-rU-lXI"/>
+                        <constraint firstItem="Y74-lE-sU3" firstAttribute="top" secondItem="aie-hT-Y4v" secondAttribute="bottom" constant="20" id="ege-do-P51"/>
+                        <constraint firstItem="aie-hT-Y4v" firstAttribute="bottom" secondItem="mp2-4M-rJS" secondAttribute="bottom" id="fnb-47-DLO"/>
+                        <constraint firstItem="Y74-lE-sU3" firstAttribute="top" secondItem="8UP-YO-FM1" secondAttribute="top" id="iTM-Wj-NWh"/>
                         <constraint firstItem="xcg-Ld-NGO" firstAttribute="top" secondItem="ORd-MH-WYM" secondAttribute="bottom" constant="8" id="jlh-z8-KT0"/>
+                        <constraint firstItem="mp2-4M-rJS" firstAttribute="width" secondItem="aie-hT-Y4v" secondAttribute="width" id="l6N-C5-Jt2"/>
+                        <constraint firstAttribute="trailing" secondItem="8UP-YO-FM1" secondAttribute="trailing" constant="20" id="md8-sE-HpA"/>
+                        <constraint firstAttribute="bottom" secondItem="Y74-lE-sU3" secondAttribute="bottom" constant="20" id="n3u-t4-Rgw"/>
+                        <constraint firstItem="8UP-YO-FM1" firstAttribute="leading" secondItem="Y74-lE-sU3" secondAttribute="trailing" constant="20" id="qD8-na-ipu"/>
                         <constraint firstAttribute="trailing" secondItem="ORd-MH-WYM" secondAttribute="trailing" constant="8" id="rvH-64-mJL"/>
+                        <constraint firstItem="imd-FU-u72" firstAttribute="leading" secondItem="ORd-MH-WYM" secondAttribute="leading" id="ssY-SG-Ug3"/>
+                        <constraint firstAttribute="trailing" secondItem="mp2-4M-rJS" secondAttribute="trailing" constant="20" id="u47-mn-GzS"/>
                         <constraint firstItem="ORd-MH-WYM" firstAttribute="leading" secondItem="wrT-oS-AOT" secondAttribute="leading" constant="8" id="vts-d5-Wob"/>
+                        <constraint firstItem="mp2-4M-rJS" firstAttribute="leading" secondItem="aie-hT-Y4v" secondAttribute="trailing" constant="20" id="zw6-S8-QgH"/>
                     </constraints>
                 </view>
             </subviews>

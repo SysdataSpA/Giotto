@@ -1,0 +1,6 @@
+framework module Blabber {
+  umbrella header "Blabber-umbrella.h"
+
+  export *
+  module * { export * }
+}
