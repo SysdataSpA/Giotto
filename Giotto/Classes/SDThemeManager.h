@@ -112,9 +112,55 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
 
 
 
-#pragma mark Dynamic Theme
+#pragma mark Dynamic behaviour
 
-- (void) setValue:(id)value forConstant:(NSString*)constant;
+/**
+ *
+ *  The following methods can change the theme and constant values ​​in a programmatic way.
+ *
+ */
 
-- (void) setValue:(id)value forStyleWithKeyPath:(NSString*)styleKeypath;
+
+
+/**
+ *  Modifies the value of a constant in a programmatic way. 
+ *  The change will only take effect for the duration of the app session. If you want to see the modify also after restarting the app, persist the modifies using synchronizeModifies method
+ *
+ * @param constant the name of the constant you want to modify
+ * @param value the new value for the constant (allowed types: NSString, NSNumber)
+ */
+- (void) modifyConstant:(NSString*)constant withValue:(id)value;
+
+/**
+*  Modifies the value for a style at a given path in a programmatic way.
+*  The change will only take effect for the duration of the app session. If you want to see the modify also after restarting the app, persist the modifies using synchronizeModifies method
+*
+*  NB: by default, the whole style is replaced with the new values ​​and past keypaths.
+*      If you want to modify only specific values and maintain all the other keypath values ​​set in the basic themes, active the inheritance on the style using the method modifyStyle:inheritanceEnable:
+*
+* @param style the name of the style you want to modify
+* @param keyPath the path to modify inside the theme
+* @param value the new value for the constant (allowed types: NSString, NSNumber, NSDictionary)
+ */
+- (void) modifyStlye:(NSString*)style forKeyPath:(NSString*)keyPath withValue:(id)value;
+
+/**
+ *  By default, modifying a style setting some keypaths replace the whole style in the bundle with only the new keypaths​​.
+ *  If you want to mantain all the other keypath values ​​set in the basic themes, active the inheritance
+ *
+ * @param style the name of the style you want to modify
+ * @param inheritanceEnable the enable state. If YES will be maintained all the keypaths for the given style set in the bundle themes. If NO the given style willl be replaced with the only keypaths added programmatically (using modifyStlye:forKeyPath:withValue:)
+ */
+- (void) modifyStyle:(NSString*)style inheritanceEnable:(BOOL)inheritanceEnable;
+
+/**
+ *  This method persists all the modifies set programmatically to retreive them also at next app restart. Otherwise all the modifies will be available for the current session.
+ */
+- (void) synchronizeModifies;
+
+/**
+ *  This method is used to reset all the modifies set programmatically (using modifyConstant:withValue: or modifyStlye:forKeyPath:withValue:).
+ */
+- (void) resetModifies;
+
 @end

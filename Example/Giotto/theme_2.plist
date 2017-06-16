@@ -6,113 +6,12 @@
 	<integer>2</integer>
 	<key>Constants</key>
 	<dict>
-		<key>FONT_REGULAR</key>
-		<string>system</string>
-		<key>FONT_BOLD</key>
-		<string>systembold</string>
-		<key>FONT_ITALIC</key>
-		<string>systemitalic</string>
-		<key>COLOR_CLEAR</key>
-		<string>c:FFF0</string>
 		<key>COLOR_TEXT_COMMON</key>
 		<string>c:545454</string>
 		<key>COLOR_BACKGROUND_COMMON</key>
 		<string>c:050505</string>
-		<key>COLOR_BACKGROUND_CONTENT</key>
-		<string>c:FFF</string>
-		<key>COLOR_BORDER_TEXTFIELD</key>
-		<string>c:AAA</string>
-		<key>COLOR_SEPARATOR</key>
-		<string>c:AAA</string>
-		<key>COLOR_HIDER_BACKGROUND</key>
-		<string>c:00000077</string>
-		<key>DIMENSION_CORNER_RADIUS_COMMON</key>
-		<integer>30</integer>
-	</dict>
-	<key>Styles</key>
-	<dict>
-		<key>CommonBorderedView</key>
-		<dict>
-			<key>layer.borderColor</key>
-			<string>c:29CD46</string>
-		</dict>
-		<key>CommonLabel</key>
-		<dict>
-			<key>textColor</key>
-			<string>COLOR_TEXT_COMMON</string>
-			<key>font</key>
-			<string>f:FONT_REGULAR,DIMENSION_FONT_COMMON</string>
-		</dict>
-		<key>CommonBoldLabel</key>
-		<dict>
-			<key>_superstyle</key>
-			<string>CommonLabel</string>
-			<key>font</key>
-			<string>f:FONT_BOLD,DIMENSION_FONT_COMMON</string>
-		</dict>
-		<key>CommonTextField</key>
-		<dict>
-			<key>textAlignment</key>
-			<string>NSTextAlignmentCenter</string>
-			<key>textColor</key>
-			<string>COLOR_BRAND_ALTERNATIVE</string>
-			<key>font</key>
-			<string>f:FONT_REGULAR,23</string>
-			<key>placeholderColor</key>
-			<string>COLOR_TEXT_PLACEHOLDER</string>
-			<key>placeholderFont</key>
-			<string>f:FONT_REGULAR,14</string>
-		</dict>
-		<key>CommonColoredButton</key>
-		<dict>
-			<key>backgroundColor</key>
-			<string>COLOR_BRAND</string>
-			<key>titleColor</key>
-			<string>COLOR_TEXT_COMMON_CONTRAST</string>
-			<key>tintColor</key>
-			<string>COLOR_TEXT_COMMON_CONTRAST</string>
-			<key>font</key>
-			<string>f:FONT_BOLD,20</string>
-			<key>layer.cornerRadius</key>
-			<string>DIMENSION_CORNER_RADIUS_COMMON</string>
-		</dict>
-		<key>CommonColoredInverseButton</key>
-		<dict>
-			<key>_superstyle</key>
-			<string>CommonColoredButton</string>
-			<key>backgroundColor</key>
-			<string>COLOR_CLEAR</string>
-			<key>titleColor</key>
-			<string>COLOR_BRAND</string>
-			<key>tintColor</key>
-			<string>COLOR_BRAND</string>
-			<key>layer.borderWidth</key>
-			<integer>2</integer>
-			<key>layer.borderColor</key>
-			<string>COLOR_BRAND</string>
-		</dict>
-		<key>CommonTextualButton</key>
-		<dict>
-			<key>titleColor</key>
-			<string>COLOR_TEXT_COMMON</string>
-			<key>titleLabel.font</key>
-			<string>f:FONT_REGULAR,DIMENSION_FONT_COMMON</string>
-		</dict>
 	</dict>
 	<key>Interfaces</key>
-	<dict>
-		<key>TestViewController</key>
-		<dict>
-			<key>styledLabel</key>
-			<string>s:CommonLabel</string>
-			<key>boldLabel</key>
-			<dict>
-				<key>_superstyle</key>
-				<string>CommonBoldLabel</string>
-				<key>textColor</key>
-				<string>c:C80028</string>
-			</dict>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

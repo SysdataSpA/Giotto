@@ -1038,9 +1038,9 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     return NSStringFromClass(class);
 }
 
-#pragma mark Dynamic Theme
+#pragma mark Dynamic behaviour
 
-- (void) setValue:(id)value forConstant:(NSString*)constant
+- (void) modifyConstant:(NSString*)constant withValue:(id)value
 {
     if(!constant)
     {
@@ -1053,22 +1053,33 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 
-- (void) setValue:(id)value forStyleWithKeyPath:(NSString*)styleKeypath
+- (void) modifyStlye:(NSString*)style forKeyPath:(NSString*)keyPath withValue:(id)value
 {
-    if(!styleKeypath)
+    if(!style)
     {
-        SDLogError(@"Can't set value %@ for missing constant", value);
+        SDLogError(@"Can't set value %@ for missing style", value);
         return;
     }
     
-    NSString* globalPath = [NSString stringWithFormat:@"%@.%@", STYLES_KEY, styleKeypath];
+    if(!keyPath)
+    {
+        SDLogError(@"Can't set value %@ for missing keypath in style %@", value, style);
+        return;
+    }
+    
+    NSString* globalPath = [NSString stringWithFormat:@"%@.%@.%@", STYLES_KEY, style, keyPath];
     [self setDynamicValue:value forKeyPath:globalPath intoDictionary:self.dynamicTheme];
 }
 
 
+/** 
+ *  This method cycles recursively on the provided keypath by creating or adding values ​​to the grafted dictionaries.
+ *  At every step of the keypath if the dictionary already exists continues to next step, if it does not exist it creates a new one.
+ *  When it comes to the last step, set the value
+ */
 - (void) setDynamicValue:(id)value forKeyPath:(nonnull NSString *)keyPath intoDictionary:(NSMutableDictionary*)dictionary
 {
-    if(![self isValidDynamicValue:value])
+    if(value && ![self isValidDynamicValue:value])
     {
         SDLogError(@"Can't set value %@: unsupported kind of data. Supported values are NSString, NSNumber, NSDictionary", value);
         return;
@@ -1077,11 +1088,20 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     NSMutableArray* components = [keyPath componentsSeparatedByString:@"."].mutableCopy;
     NSString* key = components.firstObject;
     
+    // remove corrent component to the keypath
     [components removeObjectAtIndex:0];
     
     if(components.count == 0)
     {
-        [dictionary setValue:value forKey:key];
+        // in the last step, set the value
+        if(value)
+        {
+            [dictionary setValue:value forKey:key];
+        }
+        else
+        {
+            [dictionary removeObjectForKey:key];
+        }
     }
     else
     {
@@ -1089,18 +1109,27 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
         NSMutableDictionary* newDictionary;
         if([currentValue isKindOfClass:[NSDictionary class]])
         {
+            // if the dictionary already exists continues to next step
             newDictionary = [NSMutableDictionary dictionaryWithDictionary:currentValue];
         }
         else
         {
+            // if it does not exist it creates a new one
             newDictionary = [NSMutableDictionary new];
         }
         [dictionary setValue:newDictionary forKey:key];
         
+        // recoursivly cycles to all components of keypath untill ends
         [self setDynamicValue:value forKeyPath:[components componentsJoinedByString:@"."] intoDictionary:newDictionary];
     }
 }
-       
+
+/** 
+*   Available values are:
+*   - NSString
+*   - NSNumber
+*   - NSDictionary
+*/
 - (BOOL) isValidDynamicValue:(id)value
 {
     if([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]] || [value isKindOfClass:[NSDictionary class]])
@@ -1110,5 +1139,31 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     
     return NO;
 }
+
+- (void) modifyStyle:(NSString*)style inheritanceEnable:(BOOL)inheritanceEnable
+{
+    if(!style)
+    {
+        SDLogError(@"Can't set inheritance for missing style");
+        return;
+    }
+    
+    NSString* globalPath = [NSString stringWithFormat:@"%@.%@.%@", STYLES_KEY, style, INHERIT_FROM_DEFAULT_THEME];
+    NSString* inheritanceValue = inheritanceEnable ? style : nil;
+    [self setDynamicValue:inheritanceValue forKeyPath:globalPath intoDictionary:self.dynamicTheme];
+}
+
+
+- (void) synchronizeModifies
+{
+    [self.dynamicTheme writeToFile:self.pathForDynamicTheme atomically:YES];
+}
+
+- (void)resetModifies
+{
+    [self.dynamicTheme removeAllObjects];
+    [self.dynamicTheme setValue:@2 forKey:@"formatVersion"];
+}
+
 
 @end
