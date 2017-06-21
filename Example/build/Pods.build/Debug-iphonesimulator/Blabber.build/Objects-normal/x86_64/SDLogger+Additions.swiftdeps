@@ -1,0 +1,141 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "SDLogError"
+- "SDLogInfo"
+- "SDLogWarning"
+- "SDLogVerbose"
+provides-nominal:
+provides-member:
+provides-dynamic-lookup:
+depends-top-level:
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "SDLogError"
+- "SDLogInfo"
+- "SDLogVerbose"
+- "SDLogWarning"
+- !private "SDLogger"
+- "StaticString"
+- "String"
+- "StringLiteralType"
+- "UInt"
+depends-member:
+- !private ["Ps9AnyObject", "log"]
+- !private ["Ps9AnyObject", "shared"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "log"]
+- !private ["Ps7CVarArg", "shared"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "log"]
+- !private ["Ps28CustomDebugStringConvertible", "shared"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "log"]
+- !private ["Ps23CustomStringConvertible", "shared"]
+- !private ["Ps9Equatable", "error"]
+- !private ["Ps9Equatable", "info"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "log"]
+- !private ["Ps9Equatable", "shared"]
+- !private ["Ps9Equatable", "verbose"]
+- !private ["Ps9Equatable", "warning"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "error"]
+- !private ["Ps8Hashable", "info"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "log"]
+- !private ["Ps8Hashable", "shared"]
+- !private ["Ps8Hashable", "verbose"]
+- !private ["Ps8Hashable", "warning"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["CSo8NSObject", "log"]
+- !private ["CSo8NSObject", "shared"]
+- !private ["PSo16NSObjectProtocol", "log"]
+- !private ["PSo16NSObjectProtocol", "shared"]
+- !private ["Ps16RawRepresentable", "error"]
+- !private ["Ps16RawRepresentable", "info"]
+- !private ["Ps16RawRepresentable", "verbose"]
+- !private ["Ps16RawRepresentable", "warning"]
+- !private ["OSC10SDLogLevel", "error"]
+- !private ["OSC10SDLogLevel", "info"]
+- !private ["OSC10SDLogLevel", "verbose"]
+- !private ["OSC10SDLogLevel", "warning"]
+- !private ["CSo8SDLogger", "log"]
+- !private ["CSo8SDLogger", "shared"]
+- !private ["Vs12StaticString", "init"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps9_Hashable", "error"]
+- !private ["Ps9_Hashable", "info"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "log"]
+- !private ["Ps9_Hashable", "shared"]
+- !private ["Ps9_Hashable", "verbose"]
+- !private ["Ps9_Hashable", "warning"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- !private "Ps7CVarArg"
+- !private "Ps10Comparable"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "Ps16RawRepresentable"
+- !private "OSC10SDLogLevel"
+- !private "CSo8SDLogger"
+- !private "Vs12StaticString"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/Pods/Target Support Files/Blabber/Blabber-umbrella.h"
+- "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/Pods/Blabber/Blabber/Classes/Base/swift/SysdataCoreDev-Bridging-Header.h"
+- "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/Pods/Blabber/Blabber/Classes/Base/obj-c/SDLogger.h"
+- "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/Pods/Blabber/Blabber/Classes/Base/obj-c/SDLogModules.h"
+- "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Pods.build/Debug-iphonesimulator/Blabber.build/unextended-module.modulemap"
+interface-hash: "cc4ac7150819fe257a00fd41436d0edc"

@@ -1,0 +1,10 @@
+framework module Blabber {
+  umbrella header "Blabber-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Blabber.__Swift {
+    exclude header "Blabber-Swift.h"
+}

@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "fcf5a9a242c07614547402977a2708c9"
+build_time: [551348864, 304944000]
+inputs:
+  "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/Pods/Blabber/Blabber/Classes/Base/swift/SDLogger+Additions.swift": [551348611, 0]

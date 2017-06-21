@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphonesimulator/Blabber/Blabber.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Pods.build/Debug-iphonesimulator/Blabber.build/unextended-module.modulemap',
+    }]
+  }]
+}

@@ -32,6 +32,7 @@
 		973993B4ED6BC779EA46F2C9635C1AC8 /* UITextField+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 729260EDDC3EC32BACF043A1EF0DE6AE /* UITextField+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9ABEC781D047AB80079F0EDC0CCB850F /* CALayer+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9666C947EE4B894BC71BDBF52524A1F /* CALayer+ThemeManager.m */; };
 		A8B0AA131FCD483336CDDBBDB85E97CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB18268F36DBEE0B9DAFA764F5D52F /* Foundation.framework */; };
+		AD8AD7E51EFA6C4500BD6096 /* UIView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8AD7E41EFA6C4500BD6096 /* UIView+ThemeManager.m */; };
 		AE708BABDE2E4C174D9D9D873088D75D /* MKAnnotationView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54341A4542AB9D46666884F120CF1809 /* MKAnnotationView+ThemeManager.m */; };
 		BB45F89B556FCDB410B4D91492A3A82A /* SDThemeLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C5188DE14A8FEF45037D8F89B4B900 /* SDThemeLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD6D600DFF3E83398821DF2031AFFB68 /* SDThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC9D24DEB0A1A29E1259EEFC8166138 /* SDThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -80,8 +81,8 @@
 		0D07BCA03FFF164F009DDCC357B935C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F8487D311FACD015FFB4447F13E48EB /* Pods-Giotto_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Tests-resources.sh"; sourceTree = "<group>"; };
 		0FE9FEF66FD8296215B92D8923D5233E /* NSObject+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ThemeManager.m"; sourceTree = "<group>"; };
-		15FA1D6E10B6FFE7C83BDA272000DC5B /* Giotto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Giotto.modulemap; sourceTree = "<group>"; };
-		163B05E292EFB4219175D9010B0FA8FB /* Blabber.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Blabber.modulemap; sourceTree = "<group>"; };
+		15FA1D6E10B6FFE7C83BDA272000DC5B /* Giotto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Giotto.modulemap; sourceTree = "<group>"; };
+		163B05E292EFB4219175D9010B0FA8FB /* Blabber.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Blabber.modulemap; sourceTree = "<group>"; };
 		1BBC948F2AB1B3CF785FE0FD6D5DCB9B /* SDThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDThemeManager.m; sourceTree = "<group>"; };
 		1C66AAE3A58C5A8583878060501EB539 /* Pods-Giotto_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1F4C0EF5C84A5A12912D220C66AAB06F /* Blabber-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Blabber-dummy.m"; sourceTree = "<group>"; };
@@ -105,7 +106,7 @@
 		587651C3A86F36D297281000BE80F445 /* Pods-Giotto_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5D1FB529727D5F20E17BD3902768F8E4 /* Pods-Giotto_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Giotto_Tests-umbrella.h"; sourceTree = "<group>"; };
 		5D5950E44383F0527A43088C8B3F6303 /* Pods-Giotto_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Giotto_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		62B8EFC5FB304F8C033EF869F0617656 /* Pods-Giotto_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Giotto_Tests.modulemap"; sourceTree = "<group>"; };
+		62B8EFC5FB304F8C033EF869F0617656 /* Pods-Giotto_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Giotto_Tests.modulemap"; sourceTree = "<group>"; };
 		6DF2E01533E4761786E64B97D25F6C4A /* Pods-Giotto_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Example-resources.sh"; sourceTree = "<group>"; };
 		729260EDDC3EC32BACF043A1EF0DE6AE /* UITextField+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+ThemeManager.h"; sourceTree = "<group>"; };
 		782363033834C8FB68B86CBACBA7F3F1 /* Pods-Giotto_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,21 +118,22 @@
 		856B44292C2E960539C970272F3696A3 /* Giotto.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Giotto.xcconfig; sourceTree = "<group>"; };
 		86B9DAA1D7E637F399767769FF891822 /* UITableView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+ThemeManager.h"; sourceTree = "<group>"; };
 		910C9FD59BD014FEC9B40E735ED93A0D /* CALayer+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CALayer+ThemeManager.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		968375FD51057A4287F57A8443AAAB8A /* Pods_Giotto_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Giotto_Example.framework; path = "Pods-Giotto_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ECDDEA1BE5FE28DE7D9FEC3416643EE /* Giotto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Giotto.framework; path = Giotto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		968375FD51057A4287F57A8443AAAB8A /* Pods_Giotto_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giotto_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ECDDEA1BE5FE28DE7D9FEC3416643EE /* Giotto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Giotto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2823AC29388B56535531F9974B63E7A /* SDLogger+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SDLogger+Additions.swift"; path = "Blabber/Classes/Base/swift/SDLogger+Additions.swift"; sourceTree = "<group>"; };
 		A5DD230FF1F6E78F9E242D62728143A2 /* UIImageView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ThemeManager.m"; sourceTree = "<group>"; };
 		A6B9A4251A01B6487A38AFCB459091C9 /* Blabber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Blabber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7169ACE9A4A5B776BC9CDE5638C0289 /* Pods-Giotto_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Giotto_Tests-dummy.m"; sourceTree = "<group>"; };
+		AD8AD7E41EFA6C4500BD6096 /* UIView+ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ThemeManager.m"; sourceTree = "<group>"; };
 		B3B24994A6A9EB88080D166D810A605D /* Pods-Giotto_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B3F27653B8F276B8C7CDC59B0CFE6FEE /* UIButton+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+ThemeManager.h"; sourceTree = "<group>"; };
 		B60A70016ECE3A9C24696D1C80D12F66 /* UITextField+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ThemeManager.m"; sourceTree = "<group>"; };
-		BA41E2C8A6853623E0E0D4093AF3A3F7 /* Blabber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Blabber.framework; path = Blabber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA41E2C8A6853623E0E0D4093AF3A3F7 /* Blabber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Blabber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC9D24DEB0A1A29E1259EEFC8166138 /* SDThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDThemeManager.h; sourceTree = "<group>"; };
 		C3F8C13D6F4F69393119DD5A85024F82 /* UISegmentedControl+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+ThemeManager.h"; sourceTree = "<group>"; };
 		CD0EC7B21671691C63B6846762062F53 /* SysdataCoreDev-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SysdataCoreDev-Bridging-Header.h"; path = "Blabber/Classes/Base/swift/SysdataCoreDev-Bridging-Header.h"; sourceTree = "<group>"; };
-		CF573EC5601FFB5D6FDAC59F6BA56FEA /* Pods_Giotto_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Giotto_Tests.framework; path = "Pods-Giotto_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF573EC5601FFB5D6FDAC59F6BA56FEA /* Pods_Giotto_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giotto_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01A43792D3E57FD74E474E690616114 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05ADFE9D08AE3F4355336979C712935 /* UIImage+SDUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+SDUtils.h"; sourceTree = "<group>"; };
 		D52EBCE7ABA83B3625474C8E53E10FF9 /* UIButton+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ThemeManager.m"; sourceTree = "<group>"; };
@@ -142,7 +144,7 @@
 		E4A5CA370D9EA264509B00127DD7CEBC /* Giotto-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Giotto-umbrella.h"; sourceTree = "<group>"; };
 		E8BB18268F36DBEE0B9DAFA764F5D52F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		F1B55225C270EA4C027F85055E84E99B /* Blabber-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blabber-prefix.pch"; sourceTree = "<group>"; };
-		F452D01A218DF54CDB361308A2326E76 /* Pods-Giotto_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Giotto_Example.modulemap"; sourceTree = "<group>"; };
+		F452D01A218DF54CDB361308A2326E76 /* Pods-Giotto_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Giotto_Example.modulemap"; sourceTree = "<group>"; };
 		F538CF4D19E17642E3F90492B61C534F /* Pods-Giotto_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -333,9 +335,9 @@
 				729260EDDC3EC32BACF043A1EF0DE6AE /* UITextField+ThemeManager.h */,
 				B60A70016ECE3A9C24696D1C80D12F66 /* UITextField+ThemeManager.m */,
 				48DBB4A18CA0578FFF7ACBA384FA1072 /* UIView+ThemeManager.h */,
+				AD8AD7E41EFA6C4500BD6096 /* UIView+ThemeManager.m */,
 				DBDE2B9B5755D7DC5393B3413B8EF6E7 /* Utils */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -358,7 +360,6 @@
 			children = (
 				AB05FDC827C7CDA02C7086A1E40C9553 /* Classes */,
 			);
-			name = Giotto;
 			path = Giotto;
 			sourceTree = "<group>";
 		};
@@ -388,7 +389,6 @@
 				D05ADFE9D08AE3F4355336979C712935 /* UIImage+SDUtils.h */,
 				1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+SDUtils.m */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -398,7 +398,6 @@
 				D8BDEE9059BD2F2B4F3642757F81E38C /* Core */,
 				9579C475E9E5891BD96DED29F188EA6B /* Support Files */,
 			);
-			name = Blabber;
 			path = Blabber;
 			sourceTree = "<group>";
 		};
@@ -571,6 +570,7 @@
 			files = (
 				35F9FB09B229290B3A95782D47FAA031 /* Blabber-dummy.m in Sources */,
 				1B8EC47C4DD20F22E8DFAB8C1427DA09 /* SDLogger+Additions.swift in Sources */,
+				AD8AD7E51EFA6C4500BD6096 /* UIView+ThemeManager.m in Sources */,
 				2CA44343AEADC2F3D89A8897C816CA1B /* SDLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

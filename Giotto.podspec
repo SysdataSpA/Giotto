@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Giotto'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Theme manager for your app: apply styles to anything you want through a plist file'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+SDThemeManager (henceforth called TM) is born mainly with the intention of simplifying and standardizing development of applications that require the rebranding of the GUI.
+The plist describing a theme must contain a Constants dictionary with all constants, while styles can be arranged as desired in other dictionaries. It contains all constants such as font names, colors, or sizes. Technically it is a one level organized dictionary.
+At the same level as Constants, other dictionaries can be defined as function groups of graphic styles. Group names are free.
                        DESC
 
   s.homepage         = 'https://github.com/SysdataSpA/Giotto'
