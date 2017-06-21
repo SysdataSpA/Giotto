@@ -25,7 +25,7 @@ At the same level as Constants, other dictionaries can be defined as function gr
 
   s.homepage         = 'https://github.com/SysdataSpA/Giotto'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache License, Version 2.0', :file => 'LICENSE' }
   s.author           = { 'Sysdata S.p.A.' => 'team.mobile@sysdata.it' }
   s.source           = { :git => 'https://github.com/SysdataSpA/Giotto.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
