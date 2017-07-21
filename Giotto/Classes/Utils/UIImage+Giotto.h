@@ -14,7 +14,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Utils)
+@interface UIImage (Giotto)
 
 + (UIImage*) resizedImage:(UIImage*)image scaledToSize:(CGSize)newSize;
 

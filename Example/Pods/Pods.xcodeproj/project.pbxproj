@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		00166097BBA369E56E36C156D078F8E8 /* UIView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 48DBB4A18CA0578FFF7ACBA384FA1072 /* UIView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		087D629CF1A2EDF59F1783DEF7E118B4 /* NSObject+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3997F1C8A2F274266269E59201D332F4 /* NSObject+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17D5E7E75600F4FA983848F72444B875 /* UIImage+SDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+SDUtils.m */; };
+		17D5E7E75600F4FA983848F72444B875 /* UIImage+Giotto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+Giotto.m */; };
 		1B8EC47C4DD20F22E8DFAB8C1427DA09 /* SDLogger+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2823AC29388B56535531F9974B63E7A /* SDLogger+Additions.swift */; };
-		1E57CA9EF7D71D03FD5858979C1A26D2 /* UIImage+SDUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = D05ADFE9D08AE3F4355336979C712935 /* UIImage+SDUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E57CA9EF7D71D03FD5858979C1A26D2 /* UIImage+Giotto.h in Headers */ = {isa = PBXBuildFile; fileRef = D05ADFE9D08AE3F4355336979C712935 /* UIImage+Giotto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23C277CBEFBF1D9BDE29D4DDFE64C462 /* Blabber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B9A4251A01B6487A38AFCB459091C9 /* Blabber.framework */; };
 		2CA44343AEADC2F3D89A8897C816CA1B /* SDLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DC9A92FCFAD29B5734C814F6F80F28 /* SDLogger.m */; };
 		2F5992178DC0DFBC9464307C6C2B994C /* UIImageView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DD230FF1F6E78F9E242D62728143A2 /* UIImageView+ThemeManager.m */; };
@@ -86,7 +86,7 @@
 		1BBC948F2AB1B3CF785FE0FD6D5DCB9B /* SDThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDThemeManager.m; sourceTree = "<group>"; };
 		1C66AAE3A58C5A8583878060501EB539 /* Pods-Giotto_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1F4C0EF5C84A5A12912D220C66AAB06F /* Blabber-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Blabber-dummy.m"; sourceTree = "<group>"; };
-		1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+SDUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SDUtils.m"; sourceTree = "<group>"; };
+		1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+Giotto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Giotto.m"; sourceTree = "<group>"; };
 		1FDB8796E089F7D3266E60F0D0BEE0D9 /* UITableView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ThemeManager.m"; sourceTree = "<group>"; };
 		237EDE6CAC2A4D23F9FC1C4A026F15F1 /* SDLogModules.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDLogModules.h; path = "Blabber/Classes/Base/obj-c/SDLogModules.h"; sourceTree = "<group>"; };
 		258C4BD38DA973D7959D8DA0AF54BE00 /* Pods-Giotto_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Giotto_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		CD0EC7B21671691C63B6846762062F53 /* SysdataCoreDev-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SysdataCoreDev-Bridging-Header.h"; path = "Blabber/Classes/Base/swift/SysdataCoreDev-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF573EC5601FFB5D6FDAC59F6BA56FEA /* Pods_Giotto_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giotto_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01A43792D3E57FD74E474E690616114 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D05ADFE9D08AE3F4355336979C712935 /* UIImage+SDUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+SDUtils.h"; sourceTree = "<group>"; };
+		D05ADFE9D08AE3F4355336979C712935 /* UIImage+Giotto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Giotto.h"; sourceTree = "<group>"; };
 		D52EBCE7ABA83B3625474C8E53E10FF9 /* UIButton+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ThemeManager.m"; sourceTree = "<group>"; };
 		D7A7F0964F3CF15CDDD9A94D26D4BF4D /* Giotto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Giotto-dummy.m"; sourceTree = "<group>"; };
 		D7F4DB63A260B1FE3501473D5C6A43DA /* Pods-Giotto_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Giotto_Example-dummy.m"; sourceTree = "<group>"; };
@@ -386,8 +386,8 @@
 		DBDE2B9B5755D7DC5393B3413B8EF6E7 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D05ADFE9D08AE3F4355336979C712935 /* UIImage+SDUtils.h */,
-				1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+SDUtils.m */,
+				D05ADFE9D08AE3F4355336979C712935 /* UIImage+Giotto.h */,
+				1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+Giotto.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -431,7 +431,7 @@
 				BB45F89B556FCDB410B4D91492A3A82A /* SDThemeLogger.h in Headers */,
 				BD6D600DFF3E83398821DF2031AFFB68 /* SDThemeManager.h in Headers */,
 				821FC557951C6D696B8556712DC3D357 /* UIButton+ThemeManager.h in Headers */,
-				1E57CA9EF7D71D03FD5858979C1A26D2 /* UIImage+SDUtils.h in Headers */,
+				1E57CA9EF7D71D03FD5858979C1A26D2 /* UIImage+Giotto.h in Headers */,
 				6506158A6FAA4A0719EF47E4CCB7F4FE /* UIImageView+ThemeManager.h in Headers */,
 				90AD0151D0BD27C25F5309C3F1D0EAE9 /* UISegmentedControl+ThemeManager.h in Headers */,
 				E84BD8412791AFB98017E3384D9CEB0B /* UITableView+ThemeManager.h in Headers */,
@@ -585,7 +585,7 @@
 				E0FBF7DB719BDBA263B8764D23BA303F /* NSObject+ThemeManager.m in Sources */,
 				D68873B75F70A2F9C5E12854DAE98A3E /* SDThemeManager.m in Sources */,
 				48FDF8E9806C4809E81496014E9BA029 /* UIButton+ThemeManager.m in Sources */,
-				17D5E7E75600F4FA983848F72444B875 /* UIImage+SDUtils.m in Sources */,
+				17D5E7E75600F4FA983848F72444B875 /* UIImage+Giotto.m in Sources */,
 				2F5992178DC0DFBC9464307C6C2B994C /* UIImageView+ThemeManager.m in Sources */,
 				3CF8699FEA0A5AF2DBF9181DB1277AAF /* UISegmentedControl+ThemeManager.m in Sources */,
 				727F6E6A2E8C0BB7CDB11636F91D4EA8 /* UITableView+ThemeManager.m in Sources */,

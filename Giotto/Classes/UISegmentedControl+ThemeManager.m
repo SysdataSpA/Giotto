@@ -14,7 +14,7 @@
 
 #import "UISegmentedControl+ThemeManager.h"
 #import "NSObject+ThemeManager.h"
-#import "UIImage+SDUtils.h"
+#import "UIImage+Giotto.h"
 
 @implementation UISegmentedControl (ThemeManager)
 

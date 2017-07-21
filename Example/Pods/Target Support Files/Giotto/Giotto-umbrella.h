@@ -22,7 +22,7 @@
 #import "UITableViewCell+ThemeManager.h"
 #import "UITextField+ThemeManager.h"
 #import "UIView+ThemeManager.h"
-#import "UIImage+SDUtils.h"
+#import "UIImage+Giotto.h"
 
 FOUNDATION_EXPORT double GiottoVersionNumber;
 FOUNDATION_EXPORT const unsigned char GiottoVersionString[];

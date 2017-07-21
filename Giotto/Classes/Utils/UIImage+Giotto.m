@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#import "UIImage+SDUtils.h"
+#import "UIImage+Giotto.h"
 
-@implementation UIImage (Utils)
+@implementation UIImage (Giotto)
 
 + (UIImage*) resizedImage:(UIImage*)image scaledToSize:(CGSize)newSize
 {
