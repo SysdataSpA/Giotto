@@ -71,6 +71,13 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
  */
 - (void) setAlternativeThemes:(NSArray<NSString*>*)alternativeThemes;
 
+/**
+ * Invoking this method allows you to use alternative themes other than the default one, which should be specified in the theme theme_default.plist
+ *
+ * @param alternativeThemePaths array containing the sorted plist paths containing alternative versions of the themes; The key of each value will be searched first inside them, in the order in which they were inserted and, finally, in the default theme
+ */
+- (void) setAlternativeThemesWithPaths:(NSArray<NSString*>*)alternativeThemePaths;
+
 + (instancetype) sharedManager;
 
 #pragma mark - Old methods for retro-compatibility

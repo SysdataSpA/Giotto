@@ -53,7 +53,11 @@
     }
     else
     {
-         [[SDThemeManager sharedManager] setAlternativeThemes:@[@"theme_2"]];
+        NSString* themePath = [NSBundle.mainBundle pathForResource:@"theme_2" ofType:@"plist"];
+        if (themePath)
+        {
+            [SDThemeManager.sharedManager setAlternativeThemesWithPaths:@[themePath]];
+        }
     }
     
     [self applyStyleToViewController];

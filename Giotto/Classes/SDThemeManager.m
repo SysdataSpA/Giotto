@@ -65,7 +65,6 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 @property (nonatomic, strong) NSDictionary* defaultTheme;
 @property (nonatomic, strong) NSMutableDictionary* dynamicTheme;
 
-@property (nonatomic, strong) NSArray<NSString*>* alternativeThemesPlist;
 @property (nonatomic, strong) NSArray* themes;
 
 @property (nonatomic, strong) NSString* pathForDynamicTheme;
@@ -143,7 +142,6 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 
-
 /**
  * Load the theme from the plist with the given name, make the necessary conversions and changes and return it.
  *
@@ -210,19 +208,29 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 
 - (void) setAlternativeThemes:(NSArray<NSString*>*)alternativeThemes
 {
-    self.alternativeThemesPlist = alternativeThemes;
+    NSMutableArray* paths = [NSMutableArray new];
+    for (NSString* theme in alternativeThemes)
+    {
+        NSString* path = [[NSBundle mainBundle] pathForResource:theme ofType:@"plist"];
+        if (path.length > 0)
+        {
+            [paths addObject:path];
+        }
+    }
+    [self setAlternativeThemesWithPaths:paths];
+}
+
+- (void)setAlternativeThemesWithPaths:(NSArray<NSString *> *)alternativeThemePaths
+{
     NSMutableArray* themesNew = [NSMutableArray array];
     [themesNew addObject:self.dynamicTheme];
-    if (alternativeThemes.count > 0)
+    for (NSString* path in alternativeThemePaths)
     {
-        for (NSString* plistName in alternativeThemes)
+        // for each path indicated, if it exists, add the topic to the array of themes in the specified order
+        NSDictionary* theme = [self loadThemeFromPlistAtPath:path];
+        if (theme)
         {
-            // for each plist indicated, if it exists, add the topic to the array of themes in the specified order
-            NSDictionary* theme = [self loadThemeFromPlist:plistName];
-            if (theme)
-            {
-                [themesNew addObject:theme];
-            }
+            [themesNew addObject:theme];
         }
     }
     // Finally, you enter the default theme
