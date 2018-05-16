@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphonesimulator/Blabber/Blabber.framework/Headers",
+      'name': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphoneos/Blabber/Blabber.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Blabber-Swift.h",
-          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphonesimulator/Blabber/Blabber.framework/Headers/Blabber-Swift.h"
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphoneos/Blabber/Blabber.framework/Headers/Blabber-Swift.h"
         },
         {
           'type': 'file',
@@ -35,12 +35,104 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphonesimulator/Blabber/Blabber.framework/Modules",
+      'name': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphoneos/Blabber/Blabber.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Pods.build/Debug-iphonesimulator/Blabber.build/module.modulemap"
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Pods.build/Debug-iphoneos/Blabber.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphoneos/Giotto/Giotto.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CALayer+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/CALayer+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "Giotto-Swift.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphoneos/Giotto/Giotto.framework/Headers/Giotto-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Giotto-umbrella.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/Pods/Target Support Files/Giotto/Giotto-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "MKAnnotationView+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/MKAnnotationView+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/NSObject+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDThemeLogger.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/SDThemeLogger.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/SDThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/UIButton+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+Giotto.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/Utils/UIImage+Giotto.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/UIImageView+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UISegmentedControl+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/UISegmentedControl+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITableView+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/UITableView+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITableViewCell+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/UITableViewCell+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UITextField+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/UITextField+ThemeManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+ThemeManager.h",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Giotto/Classes/UIView+ThemeManager.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Debug-iphoneos/Giotto/Giotto.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guidosabatini/LAVORO/Sysdata/Giotto/Example/build/Pods.build/Debug-iphoneos/Giotto.build/module.modulemap"
         }
       ]
     }

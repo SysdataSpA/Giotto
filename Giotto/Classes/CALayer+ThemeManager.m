@@ -25,8 +25,13 @@
         {
             self.borderColor = [value CGColor];
         }
-    }
-    else
+    } else if ([keyPath isEqualToString:@"shadowColor"])
+    {
+        if ([value isKindOfClass:[UIColor class]])
+        {
+            self.borderColor = [value CGColor];
+        }
+    } else
     {
         [super applyThemeValue:value forKeyPath:keyPath];
     }
