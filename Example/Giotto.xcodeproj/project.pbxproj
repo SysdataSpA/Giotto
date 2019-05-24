@@ -68,7 +68,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFEEB818EA4E66A72A1DD760 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B84F9D338C357DA750456107 /* Pods-Giotto_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giotto_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Giotto_Example/Pods-Giotto_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BC6C6A9DBF50FAA180ED05D2 /* Giotto.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Giotto.podspec; path = ../Giotto.podspec; sourceTree = "<group>"; };
+		BC6C6A9DBF50FAA180ED05D2 /* Giotto.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Giotto.podspec; path = ../Giotto.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED0DE7B1E0F3C8AC10CB3A83 /* Pods_Giotto_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giotto_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F11C41210EEAD82355A3FEB8 /* Pods-Giotto_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giotto_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Giotto_Example/Pods-Giotto_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F181783DBDECFE4453885CBC /* Pods-Giotto_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giotto_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Giotto_Tests/Pods-Giotto_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -274,6 +274,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

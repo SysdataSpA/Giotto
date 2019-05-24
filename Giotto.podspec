@@ -29,7 +29,8 @@ At the same level as Constants, other dictionaries can be defined as function gr
   s.author           = { 'Sysdata S.p.A.' => 'team.mobile@sysdata.it' }
   s.source           = { :git => 'https://github.com/SysdataSpA/Giotto.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  
+  s.swift_version = '4.2'
   s.ios.deployment_target = '8.0'
 
 
