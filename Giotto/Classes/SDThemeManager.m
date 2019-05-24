@@ -129,7 +129,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 {
     if(!_dynamicTheme)
     {
-        _dynamicTheme = [NSMutableDictionary dictionaryWithDictionary:[self loadThemeFromPlistAtPath:self.pathForDynamicTheme]];
+        _dynamicTheme = [NSMutableDictionary dictionaryWithDictionary:[self loadThemeFromPlistData:[self loadPlistDataAtPath:self.pathForDynamicTheme] atPath:self.pathForDynamicTheme]];
         [_dynamicTheme setValue:@2 forKey:@"formatVersion"];
     }
     return _dynamicTheme;
@@ -138,9 +138,16 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 - (NSDictionary*) loadThemeFromPlist:(NSString*)plistName
 {
     NSString* path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
-    return [self loadThemeFromPlistAtPath:path];
+    return [self loadThemeFromPlistData:[self loadPlistDataAtPath:path] atPath:path];
 }
 
+- (NSData*)loadPlistDataAtPath:(NSString*)path {
+    if (self.delegate && [self.delegate conformsToProtocol:@protocol(SDThemeManagerDelegate)]) {
+        return [self.delegate plistThemeDataAtPath:path];
+    }
+    
+    return [NSData dataWithContentsOfFile:path];
+}
 
 /**
  * Load the theme from the plist with the given name, make the necessary conversions and changes and return it.
@@ -149,12 +156,16 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
  *
  * @return The theme dictionary loaded or nil
  */
-- (NSDictionary*) loadThemeFromPlistAtPath:(NSString*)path
+- (NSDictionary*) loadThemeFromPlistData:(NSData*)data atPath:(NSString*)path
 {
     if ([[NSFileManager defaultManager] fileExistsAtPath:path])
     {
+        NSError *error;
+        NSPropertyListFormat format;
+        NSDictionary* plist = [NSPropertyListSerialization propertyListWithData:data options:NSPropertyListImmutable format:&format error:&error];
+        
         // convert the theme for reasons of retrocompatibility
-        NSDictionary* plistDict = [self convertThemeForCompatibility:[NSDictionary dictionaryWithContentsOfFile:path]];
+        NSDictionary* plistDict = [self convertThemeForCompatibility:plist];
         
         // structure that will contain the final theme
         NSMutableDictionary* theme = [NSMutableDictionary new];
@@ -227,7 +238,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     for (NSString* path in alternativeThemePaths)
     {
         // for each path indicated, if it exists, add the topic to the array of themes in the specified order
-        NSDictionary* theme = [self loadThemeFromPlistAtPath:path];
+        NSDictionary* theme = [self loadThemeFromPlistData:[self loadPlistDataAtPath:path] atPath:path];
         if (theme)
         {
             [themesNew addObject:theme];

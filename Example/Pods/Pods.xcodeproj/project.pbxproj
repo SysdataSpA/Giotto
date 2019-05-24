@@ -7,478 +7,483 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00166097BBA369E56E36C156D078F8E8 /* UIView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 48DBB4A18CA0578FFF7ACBA384FA1072 /* UIView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		087D629CF1A2EDF59F1783DEF7E118B4 /* NSObject+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3997F1C8A2F274266269E59201D332F4 /* NSObject+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17D5E7E75600F4FA983848F72444B875 /* UIImage+Giotto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+Giotto.m */; };
-		1B8EC47C4DD20F22E8DFAB8C1427DA09 /* SDLogger+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2823AC29388B56535531F9974B63E7A /* SDLogger+Additions.swift */; };
-		1E57CA9EF7D71D03FD5858979C1A26D2 /* UIImage+Giotto.h in Headers */ = {isa = PBXBuildFile; fileRef = D05ADFE9D08AE3F4355336979C712935 /* UIImage+Giotto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23C277CBEFBF1D9BDE29D4DDFE64C462 /* Blabber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B9A4251A01B6487A38AFCB459091C9 /* Blabber.framework */; };
-		2CA44343AEADC2F3D89A8897C816CA1B /* SDLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DC9A92FCFAD29B5734C814F6F80F28 /* SDLogger.m */; };
-		2F5992178DC0DFBC9464307C6C2B994C /* UIImageView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DD230FF1F6E78F9E242D62728143A2 /* UIImageView+ThemeManager.m */; };
-		3196F7BA1885C3536815890325D7685D /* SDLogModules.h in Headers */ = {isa = PBXBuildFile; fileRef = 237EDE6CAC2A4D23F9FC1C4A026F15F1 /* SDLogModules.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35F9FB09B229290B3A95782D47FAA031 /* Blabber-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C0EF5C84A5A12912D220C66AAB06F /* Blabber-dummy.m */; };
-		3CF8699FEA0A5AF2DBF9181DB1277AAF /* UISegmentedControl+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8101BDEB0B7632A6D15B270B6B8E34FD /* UISegmentedControl+ThemeManager.m */; };
-		44487B35A923529B572D77565D90C9C3 /* CALayer+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 910C9FD59BD014FEC9B40E735ED93A0D /* CALayer+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48FDF8E9806C4809E81496014E9BA029 /* UIButton+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D52EBCE7ABA83B3625474C8E53E10FF9 /* UIButton+ThemeManager.m */; };
-		4AFFB24B194F595B512D2425195052BF /* SDLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DB6B4CF19F2837769DB5352AE19556C8 /* SDLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B9EF76A14FD87A89A4F18D6D3AFF10F /* Giotto-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A5CA370D9EA264509B00127DD7CEBC /* Giotto-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DDAC9AEE40A0222EE8102388FAE89F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB18268F36DBEE0B9DAFA764F5D52F /* Foundation.framework */; };
-		630FEED2F55342F5A79A20373F4995BE /* UITableViewCell+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 382BF68798253C8C78F1CA4D85D8E3CC /* UITableViewCell+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6506158A6FAA4A0719EF47E4CCB7F4FE /* UIImageView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 51E04DE022DA3A3AE1A7564106080DFA /* UIImageView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		727F6E6A2E8C0BB7CDB11636F91D4EA8 /* UITableView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDB8796E089F7D3266E60F0D0BEE0D9 /* UITableView+ThemeManager.m */; };
-		821FC557951C6D696B8556712DC3D357 /* UIButton+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F27653B8F276B8C7CDC59B0CFE6FEE /* UIButton+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82E8D06403C0A5E34018D7DA6F724CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB18268F36DBEE0B9DAFA764F5D52F /* Foundation.framework */; };
-		90AD0151D0BD27C25F5309C3F1D0EAE9 /* UISegmentedControl+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F8C13D6F4F69393119DD5A85024F82 /* UISegmentedControl+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		973993B4ED6BC779EA46F2C9635C1AC8 /* UITextField+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 729260EDDC3EC32BACF043A1EF0DE6AE /* UITextField+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9ABEC781D047AB80079F0EDC0CCB850F /* CALayer+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9666C947EE4B894BC71BDBF52524A1F /* CALayer+ThemeManager.m */; };
-		A8B0AA131FCD483336CDDBBDB85E97CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB18268F36DBEE0B9DAFA764F5D52F /* Foundation.framework */; };
-		AD8AD7E51EFA6C4500BD6096 /* UIView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8AD7E41EFA6C4500BD6096 /* UIView+ThemeManager.m */; };
-		AE708BABDE2E4C174D9D9D873088D75D /* MKAnnotationView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 54341A4542AB9D46666884F120CF1809 /* MKAnnotationView+ThemeManager.m */; };
-		BB45F89B556FCDB410B4D91492A3A82A /* SDThemeLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C5188DE14A8FEF45037D8F89B4B900 /* SDThemeLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD6D600DFF3E83398821DF2031AFFB68 /* SDThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BDC9D24DEB0A1A29E1259EEFC8166138 /* SDThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD9F04584AEF1E4F92B7429EAA59ABF2 /* UITextField+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B60A70016ECE3A9C24696D1C80D12F66 /* UITextField+ThemeManager.m */; };
-		BFFF5EF6E1E98AEF26CF60D9FFF2F5EA /* UITableViewCell+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C6BD8BCBC30FA8D185EBADA7831E45 /* UITableViewCell+ThemeManager.m */; };
-		D0A9AE785C148AAC710D6A777D5E446B /* Pods-Giotto_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D1FB529727D5F20E17BD3902768F8E4 /* Pods-Giotto_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D0AFBC6EEB8DF006ED471FE6A522569A /* SysdataCoreDev-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = CD0EC7B21671691C63B6846762062F53 /* SysdataCoreDev-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1CCBAAED93A991FE3D9D6AC607BDEAD /* Giotto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A7F0964F3CF15CDDD9A94D26D4BF4D /* Giotto-dummy.m */; };
-		D472C3C35A839DC6CC8EC722743438B4 /* MKAnnotationView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FCC3D798D47EBF1501EC42CD443A0E9 /* MKAnnotationView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D68873B75F70A2F9C5E12854DAE98A3E /* SDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC948F2AB1B3CF785FE0FD6D5DCB9B /* SDThemeManager.m */; };
-		D79C3C815601D4A48311DBCC93C3C500 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BB18268F36DBEE0B9DAFA764F5D52F /* Foundation.framework */; };
-		D9152A7626C3BF704E43A4B83BE3385E /* Pods-Giotto_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 258C4BD38DA973D7959D8DA0AF54BE00 /* Pods-Giotto_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFD5F72A65B6CB9FD9D60306573F40C5 /* Blabber-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C31FAE9E2A575B096B5FC53FAD2760C /* Blabber-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0FBF7DB719BDBA263B8764D23BA303F /* NSObject+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE9FEF66FD8296215B92D8923D5233E /* NSObject+ThemeManager.m */; };
-		E823C2A9907CFF82CAA10AFA4DBD0A76 /* Pods-Giotto_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7169ACE9A4A5B776BC9CDE5638C0289 /* Pods-Giotto_Tests-dummy.m */; };
-		E84BD8412791AFB98017E3384D9CEB0B /* UITableView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 86B9DAA1D7E637F399767769FF891822 /* UITableView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF6BF96EBC408F91B8A75D0C005DEFC9 /* Pods-Giotto_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F4DB63A260B1FE3501473D5C6A43DA /* Pods-Giotto_Example-dummy.m */; };
+		04322E04C2DB683C3989AC1DF61A2D69 /* UISegmentedControl+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 301A397D3B1FB59A07A1A237D4E8F602 /* UISegmentedControl+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		091E001F6189535EDE2A79405FACC303 /* CALayer+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86F1E916389EF0B5E90BABDD698ED9D6 /* CALayer+ThemeManager.m */; };
+		0947FD617C7028805A0A37577591056A /* Giotto-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C6CCA8BBF222E026A932423BF1FF8DC /* Giotto-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A4B006438FDC0451253490F9D7550EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BDFBF68BA9D516F4A7FE70E6ABCA1 /* Foundation.framework */; };
+		0F448DC69E7F7DCB738702DBD8AE8065 /* UIImage+Giotto.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC2070FAA3C3DC76C460038B361366A /* UIImage+Giotto.m */; };
+		1412469172EC91882924D6C1C376A212 /* UIImage+Giotto.h in Headers */ = {isa = PBXBuildFile; fileRef = F321E23C844BF68E9FC7DBF1BA1489D5 /* UIImage+Giotto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D4EDF490C1A3D242C373697B3DB03B /* UITableViewCell+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC56EE135D99C9FA0AFE381128D38D82 /* UITableViewCell+ThemeManager.m */; };
+		1DAC58BFBC1F8FA779C84C09556E4A5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BDFBF68BA9D516F4A7FE70E6ABCA1 /* Foundation.framework */; };
+		1E30F3E6AF8CE8471B54983EC77CC5EE /* UITextField+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FC3F801D206EF4D3ED270FAB9EEED /* UITextField+ThemeManager.m */; };
+		1FCABE082BE808C7B5C579EC3AF1D64D /* UISegmentedControl+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBC92FAF0F21FD920EE15392F887537 /* UISegmentedControl+ThemeManager.m */; };
+		2943D44546E0DB6F48D0FD624C6F3B04 /* MKAnnotationView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE14F7BC2EF6833D8EA1B7FE61C8AEC /* MKAnnotationView+ThemeManager.m */; };
+		2A64DDF9E60CA3633F34C5E13D21BAB2 /* NSObject+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 767590C45F88B284123A1BA4ECCFB190 /* NSObject+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EBA298C539544D58A8AD560084FC35E /* Pods-Giotto_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64D75593397E8CF799405C2D42E8ADB1 /* Pods-Giotto_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34C25D070B01FD8F35C587CD76BD4B4D /* Blabber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB4AB23887B3824E23CC040C938905A /* Blabber.framework */; };
+		3FF3199A29EDC4BA2CAEB18CFA7C0859 /* SDLogger+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04B9715F1559F7785EB035BC40AAB0C /* SDLogger+Additions.swift */; };
+		44AE136DE8B9A264D8A684B74A81B146 /* UIView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 035A536BBDAB8AEE8CC77E7272537BAB /* UIView+ThemeManager.m */; };
+		4B4E86F3E773D490BAC7FF45269288F8 /* UITextField+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EB9DF169C88E8906005E13176BB6FA /* UITextField+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F49F3ABAD576B7E105969CCDE863BCF /* Pods-Giotto_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC08011740EF71744288F2263F9DE2 /* Pods-Giotto_Tests-dummy.m */; };
+		6C5FD7C55863442968E28D10EFFDF757 /* Giotto-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4ACFCD9163B38A32B0CCBB9BB8464F1 /* Giotto-dummy.m */; };
+		74D260916893041D9C2D675F269D5B17 /* UITableView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D45FD8361A9CA9EA9822B4E8BF4EFC /* UITableView+ThemeManager.m */; };
+		78DD8CAAA9EF54B66BB20C1C727F3266 /* SDThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D356E6D134D33BFF78674C07BA2B4C88 /* SDThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88D1C07E667B932F24AE59281940060F /* NSObject+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2495E6FF3F1FA96F741DF47742CB4D8 /* NSObject+ThemeManager.m */; };
+		8A50DFB86BF1CF8D5640995202664F15 /* Blabber-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCF39CDFE98F91BB4750715A9D00E126 /* Blabber-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DA7BFAC4A78027F6741FC5C13FDF243 /* UITableView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8C4F725E29562F86FE4455FDB5E8EF /* UITableView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F3052795FA10D22FD8C80D7877BD8C1 /* SDLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 8730A4C81AA9C963F1A5F98F442055DC /* SDLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F59CE47847548784093D936338B9C06 /* Blabber-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = F16BA70C1486691717327BFCB3D6E8D7 /* Blabber-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9072CD30C256A8887F92AB380065ED69 /* MKAnnotationView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EAF32C6A2CA604D118F31FF52C8BC2A /* MKAnnotationView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90EFD805D49D3CC24302508C74DB4E12 /* UITableViewCell+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D7645AECCD5E26380F2B7CB7971D5C3 /* UITableViewCell+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98EF462530E0C5A2CF59902428DAC851 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BDFBF68BA9D516F4A7FE70E6ABCA1 /* Foundation.framework */; };
+		A40BEBAA427C249C29DCD12ABBE28F80 /* SDLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AA7B469CCD12FE41264A6A7583C072 /* SDLogger.m */; };
+		A59817763A78B19FC2C3FAB90ED94CC5 /* UIImageView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C936F570BBF3E428A93A4C5E45E2638 /* UIImageView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9D93A277E44A85BCBB6DB533BC4F916 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BDFBF68BA9D516F4A7FE70E6ABCA1 /* Foundation.framework */; };
+		AB085EFEB85039AE870976C07D753B07 /* SDThemeLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A95F437D7F01B06BEE52AB57B991ACB5 /* SDThemeLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE1FF9D10711F7555BE61582E422F853 /* SDThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEB771D90753671781C506CC7C566C0 /* SDThemeManager.m */; };
+		B45298CA49A963E27950DC79F9147A8B /* UIView+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E0E6A2019EA19947D34A0F63AFDD8C /* UIView+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C20F2B139A3EA81E2203F4136162AE96 /* UIButton+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4BD624B6FA077E87C6F6D204362A9F1 /* UIButton+ThemeManager.m */; };
+		CAFA2AD8A0C6348A332A88DCD6662D24 /* Pods-Giotto_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F7FD5B2BE03C69A86DE32AD3BB9294 /* Pods-Giotto_Example-dummy.m */; };
+		CBA08D22752AE9C203EC3BCE70358697 /* Blabber-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5923A0579DF335C4E78EF4EAA173C1EE /* Blabber-dummy.m */; };
+		D48C6AD3A72F17E1782EBE169AD68720 /* UIButton+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B62681BE60A81718CEF35B90827FDF05 /* UIButton+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E12FF6271BFF175AC5A394CCF21155A8 /* SDLogModules.h in Headers */ = {isa = PBXBuildFile; fileRef = 229C3407B563F9C9C1A96672C8A8D051 /* SDLogModules.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E88D9867E881B2BFCAE9A504A5A5E06C /* CALayer+ThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CB595EA573CEB34DF372EF57884DF0FF /* CALayer+ThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EED0AAE430314BB938C1606B253C5880 /* UIImageView+ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F528E6D8DC2775CE330E5D41C94D8F27 /* UIImageView+ThemeManager.m */; };
+		F487A75FD2BFD9E4B9B75ADFEAFBFC7E /* Pods-Giotto_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EAFFAE9BDC84C387249D3596F37764B /* Pods-Giotto_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		15142223B68C828E1F708AE9708A80B2 /* PBXContainerItemProxy */ = {
+		03753DADB50156F560BC52BAE8CEB5B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4E374A2EDB8A6DD35E4D88D28B80F29F;
+			remoteGlobalIDString = 4389D51C3AFAF7922FBD0914D1CCBCC7;
+			remoteInfo = "Pods-Giotto_Example";
+		};
+		45A6295D9813E9757B1A27D4701E50C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4AF8FDF93BFECDE48A78A661511EBBE;
+			remoteInfo = Blabber;
+		};
+		C05924992FA35E0943051A56EC9EB872 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4AF8FDF93BFECDE48A78A661511EBBE;
+			remoteInfo = Blabber;
+		};
+		F781975D53BE2DDD036AD94974AD3CBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7FC822E3282910A2D087C2B63EAF86E;
 			remoteInfo = Giotto;
-		};
-		4C4CCF5AC2ED2861499512EA1E92695C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D15E9BDBD6AEEAA3366ECA54B7A51B0;
-			remoteInfo = Blabber;
-		};
-		C975D2E8CFA6FA0D733A3A1B610CA30D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D15E9BDBD6AEEAA3366ECA54B7A51B0;
-			remoteInfo = Blabber;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		062A985857DDBC0658D1F3E5C7F48B8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D07BCA03FFF164F009DDCC357B935C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F8487D311FACD015FFB4447F13E48EB /* Pods-Giotto_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Tests-resources.sh"; sourceTree = "<group>"; };
-		0FE9FEF66FD8296215B92D8923D5233E /* NSObject+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ThemeManager.m"; sourceTree = "<group>"; };
-		15FA1D6E10B6FFE7C83BDA272000DC5B /* Giotto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Giotto.modulemap; sourceTree = "<group>"; };
-		163B05E292EFB4219175D9010B0FA8FB /* Blabber.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Blabber.modulemap; sourceTree = "<group>"; };
-		1BBC948F2AB1B3CF785FE0FD6D5DCB9B /* SDThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SDThemeManager.m; sourceTree = "<group>"; };
-		1C66AAE3A58C5A8583878060501EB539 /* Pods-Giotto_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Example-frameworks.sh"; sourceTree = "<group>"; };
-		1F4C0EF5C84A5A12912D220C66AAB06F /* Blabber-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Blabber-dummy.m"; sourceTree = "<group>"; };
-		1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+Giotto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Giotto.m"; sourceTree = "<group>"; };
-		1FDB8796E089F7D3266E60F0D0BEE0D9 /* UITableView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ThemeManager.m"; sourceTree = "<group>"; };
-		237EDE6CAC2A4D23F9FC1C4A026F15F1 /* SDLogModules.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDLogModules.h; path = "Blabber/Classes/Base/obj-c/SDLogModules.h"; sourceTree = "<group>"; };
-		258C4BD38DA973D7959D8DA0AF54BE00 /* Pods-Giotto_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Giotto_Example-umbrella.h"; sourceTree = "<group>"; };
-		25C6BD8BCBC30FA8D185EBADA7831E45 /* UITableViewCell+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ThemeManager.m"; sourceTree = "<group>"; };
-		30B755B96AD44EDB36DB3D4C0DBF8DEA /* Giotto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Giotto-prefix.pch"; sourceTree = "<group>"; };
-		382BF68798253C8C78F1CA4D85D8E3CC /* UITableViewCell+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ThemeManager.h"; sourceTree = "<group>"; };
-		3997F1C8A2F274266269E59201D332F4 /* NSObject+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+ThemeManager.h"; sourceTree = "<group>"; };
-		39E2DA3DACB23A92BF3AA8D6FEB42765 /* Pods-Giotto_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Giotto_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3C31FAE9E2A575B096B5FC53FAD2760C /* Blabber-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blabber-umbrella.h"; sourceTree = "<group>"; };
-		48189EA5734A5AFB6DDC4EFED741D0C0 /* Pods-Giotto_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Giotto_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		48DBB4A18CA0578FFF7ACBA384FA1072 /* UIView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ThemeManager.h"; sourceTree = "<group>"; };
-		4D95F3B9D5BD07A12992BCD6AFE485CC /* Pods-Giotto_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		5148E7C3D61DC3C15215CB073524D212 /* Pods-Giotto_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Giotto_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		51E04DE022DA3A3AE1A7564106080DFA /* UIImageView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ThemeManager.h"; sourceTree = "<group>"; };
-		53DC9A92FCFAD29B5734C814F6F80F28 /* SDLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDLogger.m; path = "Blabber/Classes/Base/obj-c/SDLogger.m"; sourceTree = "<group>"; };
-		54341A4542AB9D46666884F120CF1809 /* MKAnnotationView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+ThemeManager.m"; sourceTree = "<group>"; };
-		587651C3A86F36D297281000BE80F445 /* Pods-Giotto_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5D1FB529727D5F20E17BD3902768F8E4 /* Pods-Giotto_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Giotto_Tests-umbrella.h"; sourceTree = "<group>"; };
-		5D5950E44383F0527A43088C8B3F6303 /* Pods-Giotto_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Giotto_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		62B8EFC5FB304F8C033EF869F0617656 /* Pods-Giotto_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Giotto_Tests.modulemap"; sourceTree = "<group>"; };
-		6DF2E01533E4761786E64B97D25F6C4A /* Pods-Giotto_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Example-resources.sh"; sourceTree = "<group>"; };
-		729260EDDC3EC32BACF043A1EF0DE6AE /* UITextField+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+ThemeManager.h"; sourceTree = "<group>"; };
-		782363033834C8FB68B86CBACBA7F3F1 /* Pods-Giotto_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Example.release.xcconfig"; sourceTree = "<group>"; };
-		78C8FA252FE5221E98ABAF7812AEAE74 /* Blabber.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Blabber.xcconfig; sourceTree = "<group>"; };
-		78F8888958894D56F4DB843D77EE718E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FCC3D798D47EBF1501EC42CD443A0E9 /* MKAnnotationView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+ThemeManager.h"; sourceTree = "<group>"; };
-		8101BDEB0B7632A6D15B270B6B8E34FD /* UISegmentedControl+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+ThemeManager.m"; sourceTree = "<group>"; };
-		84C5188DE14A8FEF45037D8F89B4B900 /* SDThemeLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDThemeLogger.h; sourceTree = "<group>"; };
-		856B44292C2E960539C970272F3696A3 /* Giotto.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Giotto.xcconfig; sourceTree = "<group>"; };
-		86B9DAA1D7E637F399767769FF891822 /* UITableView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITableView+ThemeManager.h"; sourceTree = "<group>"; };
-		910C9FD59BD014FEC9B40E735ED93A0D /* CALayer+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CALayer+ThemeManager.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		968375FD51057A4287F57A8443AAAB8A /* Pods_Giotto_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giotto_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ECDDEA1BE5FE28DE7D9FEC3416643EE /* Giotto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Giotto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2823AC29388B56535531F9974B63E7A /* SDLogger+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SDLogger+Additions.swift"; path = "Blabber/Classes/Base/swift/SDLogger+Additions.swift"; sourceTree = "<group>"; };
-		A5DD230FF1F6E78F9E242D62728143A2 /* UIImageView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ThemeManager.m"; sourceTree = "<group>"; };
-		A6B9A4251A01B6487A38AFCB459091C9 /* Blabber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Blabber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7169ACE9A4A5B776BC9CDE5638C0289 /* Pods-Giotto_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Giotto_Tests-dummy.m"; sourceTree = "<group>"; };
-		AD8AD7E41EFA6C4500BD6096 /* UIView+ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ThemeManager.m"; sourceTree = "<group>"; };
-		B3B24994A6A9EB88080D166D810A605D /* Pods-Giotto_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		B3F27653B8F276B8C7CDC59B0CFE6FEE /* UIButton+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+ThemeManager.h"; sourceTree = "<group>"; };
-		B60A70016ECE3A9C24696D1C80D12F66 /* UITextField+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ThemeManager.m"; sourceTree = "<group>"; };
-		BA41E2C8A6853623E0E0D4093AF3A3F7 /* Blabber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Blabber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDC9D24DEB0A1A29E1259EEFC8166138 /* SDThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SDThemeManager.h; sourceTree = "<group>"; };
-		C3F8C13D6F4F69393119DD5A85024F82 /* UISegmentedControl+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+ThemeManager.h"; sourceTree = "<group>"; };
-		CD0EC7B21671691C63B6846762062F53 /* SysdataCoreDev-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SysdataCoreDev-Bridging-Header.h"; path = "Blabber/Classes/Base/swift/SysdataCoreDev-Bridging-Header.h"; sourceTree = "<group>"; };
-		CF573EC5601FFB5D6FDAC59F6BA56FEA /* Pods_Giotto_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giotto_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D01A43792D3E57FD74E474E690616114 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D05ADFE9D08AE3F4355336979C712935 /* UIImage+Giotto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Giotto.h"; sourceTree = "<group>"; };
-		D52EBCE7ABA83B3625474C8E53E10FF9 /* UIButton+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ThemeManager.m"; sourceTree = "<group>"; };
-		D7A7F0964F3CF15CDDD9A94D26D4BF4D /* Giotto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Giotto-dummy.m"; sourceTree = "<group>"; };
-		D7F4DB63A260B1FE3501473D5C6A43DA /* Pods-Giotto_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Giotto_Example-dummy.m"; sourceTree = "<group>"; };
-		D9666C947EE4B894BC71BDBF52524A1F /* CALayer+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CALayer+ThemeManager.m"; sourceTree = "<group>"; };
-		DB6B4CF19F2837769DB5352AE19556C8 /* SDLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDLogger.h; path = "Blabber/Classes/Base/obj-c/SDLogger.h"; sourceTree = "<group>"; };
-		E4A5CA370D9EA264509B00127DD7CEBC /* Giotto-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Giotto-umbrella.h"; sourceTree = "<group>"; };
-		E8BB18268F36DBEE0B9DAFA764F5D52F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		F1B55225C270EA4C027F85055E84E99B /* Blabber-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blabber-prefix.pch"; sourceTree = "<group>"; };
-		F452D01A218DF54CDB361308A2326E76 /* Pods-Giotto_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Giotto_Example.modulemap"; sourceTree = "<group>"; };
-		F538CF4D19E17642E3F90492B61C534F /* Pods-Giotto_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0195D1FADD6C416A617807FEF54304A9 /* Pods-Giotto_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Example.release.xcconfig"; sourceTree = "<group>"; };
+		035A536BBDAB8AEE8CC77E7272537BAB /* UIView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ThemeManager.m"; path = "Giotto/Classes/UIView+ThemeManager.m"; sourceTree = "<group>"; };
+		0CEDE0E3A74485AC6719279F641E8B47 /* Pods-Giotto_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Giotto_Tests.modulemap"; sourceTree = "<group>"; };
+		1CED84087E3921D8616E59412A71EC7F /* Giotto.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Giotto.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		229C3407B563F9C9C1A96672C8A8D051 /* SDLogModules.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDLogModules.h; path = "Blabber/Classes/Base/obj-c/SDLogModules.h"; sourceTree = "<group>"; };
+		232864C7C2F7B330500BA91A9FA8F8E1 /* Pods-Giotto_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Giotto_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		239873FB5B6BC1AB17841355A68E35C4 /* Blabber-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blabber-prefix.pch"; sourceTree = "<group>"; };
+		27C4FD463F27A2873C1ED163C8B4F949 /* Pods-Giotto_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Giotto_Example.modulemap"; sourceTree = "<group>"; };
+		2D2BDFBF68BA9D516F4A7FE70E6ABCA1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2EBC92FAF0F21FD920EE15392F887537 /* UISegmentedControl+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UISegmentedControl+ThemeManager.m"; path = "Giotto/Classes/UISegmentedControl+ThemeManager.m"; sourceTree = "<group>"; };
+		301A397D3B1FB59A07A1A237D4E8F602 /* UISegmentedControl+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISegmentedControl+ThemeManager.h"; path = "Giotto/Classes/UISegmentedControl+ThemeManager.h"; sourceTree = "<group>"; };
+		3031D6C9B9EDBFA6BE2D9CB496C76169 /* Blabber.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Blabber.xcconfig; sourceTree = "<group>"; };
+		34402C52C69A2005F9A7A2153783ED1A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		382D7F4C7DBE5F9930E7E86555A0CA93 /* Blabber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Blabber.framework; path = Blabber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		397C19C80140A3C860675E10C161A0D7 /* Giotto.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Giotto.modulemap; sourceTree = "<group>"; };
+		3ADC08011740EF71744288F2263F9DE2 /* Pods-Giotto_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Giotto_Tests-dummy.m"; sourceTree = "<group>"; };
+		4C0FC3F801D206EF4D3ED270FAB9EEED /* UITextField+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+ThemeManager.m"; path = "Giotto/Classes/UITextField+ThemeManager.m"; sourceTree = "<group>"; };
+		4CEB771D90753671781C506CC7C566C0 /* SDThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDThemeManager.m; path = Giotto/Classes/SDThemeManager.m; sourceTree = "<group>"; };
+		4EAFFAE9BDC84C387249D3596F37764B /* Pods-Giotto_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Giotto_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4FE206C1A2D037E811A4AA24DDDB7C5C /* Blabber-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Blabber-Info.plist"; sourceTree = "<group>"; };
+		52F7FD5B2BE03C69A86DE32AD3BB9294 /* Pods-Giotto_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Giotto_Example-dummy.m"; sourceTree = "<group>"; };
+		5923A0579DF335C4E78EF4EAA173C1EE /* Blabber-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Blabber-dummy.m"; sourceTree = "<group>"; };
+		5C936F570BBF3E428A93A4C5E45E2638 /* UIImageView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ThemeManager.h"; path = "Giotto/Classes/UIImageView+ThemeManager.h"; sourceTree = "<group>"; };
+		5D7645AECCD5E26380F2B7CB7971D5C3 /* UITableViewCell+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+ThemeManager.h"; path = "Giotto/Classes/UITableViewCell+ThemeManager.h"; sourceTree = "<group>"; };
+		64D75593397E8CF799405C2D42E8ADB1 /* Pods-Giotto_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Giotto_Example-umbrella.h"; sourceTree = "<group>"; };
+		66A7C55E710E9ABC6578C9604307A63D /* Giotto.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Giotto.xcconfig; sourceTree = "<group>"; };
+		6C6CCA8BBF222E026A932423BF1FF8DC /* Giotto-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Giotto-umbrella.h"; sourceTree = "<group>"; };
+		75EB9DF169C88E8906005E13176BB6FA /* UITextField+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+ThemeManager.h"; path = "Giotto/Classes/UITextField+ThemeManager.h"; sourceTree = "<group>"; };
+		767590C45F88B284123A1BA4ECCFB190 /* NSObject+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+ThemeManager.h"; path = "Giotto/Classes/NSObject+ThemeManager.h"; sourceTree = "<group>"; };
+		7A8FCDB135547674B28CBFA3E389F213 /* Pods-Giotto_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		80A35FDEB834D4439996FDB157719F58 /* Pods-Giotto_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		86F1E916389EF0B5E90BABDD698ED9D6 /* CALayer+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+ThemeManager.m"; path = "Giotto/Classes/CALayer+ThemeManager.m"; sourceTree = "<group>"; };
+		8730A4C81AA9C963F1A5F98F442055DC /* SDLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDLogger.h; path = "Blabber/Classes/Base/obj-c/SDLogger.h"; sourceTree = "<group>"; };
+		893DB6BC6A027C859E4C2C16B7810E71 /* Pods-Giotto_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Giotto_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		89BD0C7D58E81E9D78A4C4924400CBA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9B63214096C46A32BD80324D6BE97FF9 /* Pods-Giotto_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Giotto_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EAF32C6A2CA604D118F31FF52C8BC2A /* MKAnnotationView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKAnnotationView+ThemeManager.h"; path = "Giotto/Classes/MKAnnotationView+ThemeManager.h"; sourceTree = "<group>"; };
+		9EC2070FAA3C3DC76C460038B361366A /* UIImage+Giotto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Giotto.m"; sourceTree = "<group>"; };
+		A4ACFCD9163B38A32B0CCBB9BB8464F1 /* Giotto-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Giotto-dummy.m"; sourceTree = "<group>"; };
+		A4BD624B6FA077E87C6F6D204362A9F1 /* UIButton+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ThemeManager.m"; path = "Giotto/Classes/UIButton+ThemeManager.m"; sourceTree = "<group>"; };
+		A95F437D7F01B06BEE52AB57B991ACB5 /* SDThemeLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDThemeLogger.h; path = Giotto/Classes/SDThemeLogger.h; sourceTree = "<group>"; };
+		ABE14F7BC2EF6833D8EA1B7FE61C8AEC /* MKAnnotationView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKAnnotationView+ThemeManager.m"; path = "Giotto/Classes/MKAnnotationView+ThemeManager.m"; sourceTree = "<group>"; };
+		AFB4AB23887B3824E23CC040C938905A /* Blabber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Blabber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A5FC86EFC8300EF27160844F177F39 /* Pods-Giotto_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Giotto_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B5071CC872CFEFAA5E914B8E0AA7C04B /* Pods_Giotto_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Giotto_Tests.framework; path = "Pods-Giotto_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62681BE60A81718CEF35B90827FDF05 /* UIButton+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+ThemeManager.h"; path = "Giotto/Classes/UIButton+ThemeManager.h"; sourceTree = "<group>"; };
+		B8D45FD8361A9CA9EA9822B4E8BF4EFC /* UITableView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+ThemeManager.m"; path = "Giotto/Classes/UITableView+ThemeManager.m"; sourceTree = "<group>"; };
+		BA4B4B2BFB068A239EEDB4DE04591AB8 /* Giotto-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Giotto-prefix.pch"; sourceTree = "<group>"; };
+		BE8C4F725E29562F86FE4455FDB5E8EF /* UITableView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+ThemeManager.h"; path = "Giotto/Classes/UITableView+ThemeManager.h"; sourceTree = "<group>"; };
+		C133F29EC9AB295A7445127193BE9C1D /* Giotto-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Giotto-Info.plist"; sourceTree = "<group>"; };
+		C2495E6FF3F1FA96F741DF47742CB4D8 /* NSObject+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ThemeManager.m"; path = "Giotto/Classes/NSObject+ThemeManager.m"; sourceTree = "<group>"; };
+		C55E4ED72E1075D666622A68C23B7E4C /* Pods-Giotto_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Giotto_Example-Info.plist"; sourceTree = "<group>"; };
+		C6E0E6A2019EA19947D34A0F63AFDD8C /* UIView+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ThemeManager.h"; path = "Giotto/Classes/UIView+ThemeManager.h"; sourceTree = "<group>"; };
+		C88629FB90C7EB44C0A082A945977557 /* Pods_Giotto_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Giotto_Example.framework; path = "Pods-Giotto_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB595EA573CEB34DF372EF57884DF0FF /* CALayer+ThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+ThemeManager.h"; path = "Giotto/Classes/CALayer+ThemeManager.h"; sourceTree = "<group>"; };
+		CCF39CDFE98F91BB4750715A9D00E126 /* Blabber-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Blabber-umbrella.h"; sourceTree = "<group>"; };
+		CF99E078F5DE41A56D9D37AA879EC636 /* Pods-Giotto_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Giotto_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1B1D5D12D80569FEC786BA4DC30AD8C /* Pods-Giotto_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Giotto_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D356E6D134D33BFF78674C07BA2B4C88 /* SDThemeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDThemeManager.h; path = Giotto/Classes/SDThemeManager.h; sourceTree = "<group>"; };
+		E7AA7B469CCD12FE41264A6A7583C072 /* SDLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDLogger.m; path = "Blabber/Classes/Base/obj-c/SDLogger.m"; sourceTree = "<group>"; };
+		E8107D9ED9EE532BB0B1351735ADD2F9 /* Giotto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Giotto.framework; path = Giotto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F04B9715F1559F7785EB035BC40AAB0C /* SDLogger+Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SDLogger+Additions.swift"; path = "Blabber/Classes/Base/swift/SDLogger+Additions.swift"; sourceTree = "<group>"; };
+		F16BA70C1486691717327BFCB3D6E8D7 /* Blabber-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Blabber-Bridging-Header.h"; path = "Blabber/Classes/Base/swift/Blabber-Bridging-Header.h"; sourceTree = "<group>"; };
+		F321E23C844BF68E9FC7DBF1BA1489D5 /* UIImage+Giotto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Giotto.h"; sourceTree = "<group>"; };
+		F528E6D8DC2775CE330E5D41C94D8F27 /* UIImageView+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+ThemeManager.m"; path = "Giotto/Classes/UIImageView+ThemeManager.m"; sourceTree = "<group>"; };
+		F6424501C7D05FB4E6B01B000474289C /* Pods-Giotto_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Giotto_Tests-Info.plist"; sourceTree = "<group>"; };
+		FC56EE135D99C9FA0AFE381128D38D82 /* UITableViewCell+ThemeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+ThemeManager.m"; path = "Giotto/Classes/UITableViewCell+ThemeManager.m"; sourceTree = "<group>"; };
+		FF71C4545700C2F7C9732E4596471E25 /* Blabber.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Blabber.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		369407694411A7C3613FCCE06FA7884B /* Frameworks */ = {
+		7B9F62AC7EAD9E91C11D7F7E37BFC9C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DDAC9AEE40A0222EE8102388FAE89F3 /* Foundation.framework in Frameworks */,
+				34C25D070B01FD8F35C587CD76BD4B4D /* Blabber.framework in Frameworks */,
+				0A4B006438FDC0451253490F9D7550EB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		80BCE59C7761410D5665550D0DC29228 /* Frameworks */ = {
+		C56BDFC8CF7727032B4F44EFAFE0D75F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D79C3C815601D4A48311DBCC93C3C500 /* Foundation.framework in Frameworks */,
+				98EF462530E0C5A2CF59902428DAC851 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0AA5A5AD900C41DE5B3D04966365D27 /* Frameworks */ = {
+		CACC96C7373BCBB267C9A1CAA3EB5C59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82E8D06403C0A5E34018D7DA6F724CFF /* Foundation.framework in Frameworks */,
+				1DAC58BFBC1F8FA779C84C09556E4A5A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B99B0622A7F303B4D2935475E6E97C2F /* Frameworks */ = {
+		F5CD9BDF9C1B765B2E05587C26247B68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C277CBEFBF1D9BDE29D4DDFE64C462 /* Blabber.framework in Frameworks */,
-				A8B0AA131FCD483336CDDBBDB85E97CF /* Foundation.framework in Frameworks */,
+				A9D93A277E44A85BCBB6DB533BC4F916 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C288C63BB6F830A2D50FACC8C3EBCA0 /* Core */ = {
+		275685F891C9333F4DCD2332984B8235 /* Pods-Giotto_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C3642CD806D9AB19941DC553D2140915 /* Giotto */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		3C3176C96A4687DA0C908A6C551980F9 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				751046AAFBD1F4CEE7721F4E79F2FFBD /* Pods-Giotto_Example */,
-				42921C52F12401914B71244A2C367E49 /* Pods-Giotto_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		42921C52F12401914B71244A2C367E49 /* Pods-Giotto_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				78F8888958894D56F4DB843D77EE718E /* Info.plist */,
-				62B8EFC5FB304F8C033EF869F0617656 /* Pods-Giotto_Tests.modulemap */,
-				5148E7C3D61DC3C15215CB073524D212 /* Pods-Giotto_Tests-acknowledgements.markdown */,
-				39E2DA3DACB23A92BF3AA8D6FEB42765 /* Pods-Giotto_Tests-acknowledgements.plist */,
-				A7169ACE9A4A5B776BC9CDE5638C0289 /* Pods-Giotto_Tests-dummy.m */,
-				B3B24994A6A9EB88080D166D810A605D /* Pods-Giotto_Tests-frameworks.sh */,
-				0F8487D311FACD015FFB4447F13E48EB /* Pods-Giotto_Tests-resources.sh */,
-				5D1FB529727D5F20E17BD3902768F8E4 /* Pods-Giotto_Tests-umbrella.h */,
-				4D95F3B9D5BD07A12992BCD6AFE485CC /* Pods-Giotto_Tests.debug.xcconfig */,
-				F538CF4D19E17642E3F90492B61C534F /* Pods-Giotto_Tests.release.xcconfig */,
+				0CEDE0E3A74485AC6719279F641E8B47 /* Pods-Giotto_Tests.modulemap */,
+				D1B1D5D12D80569FEC786BA4DC30AD8C /* Pods-Giotto_Tests-acknowledgements.markdown */,
+				893DB6BC6A027C859E4C2C16B7810E71 /* Pods-Giotto_Tests-acknowledgements.plist */,
+				3ADC08011740EF71744288F2263F9DE2 /* Pods-Giotto_Tests-dummy.m */,
+				F6424501C7D05FB4E6B01B000474289C /* Pods-Giotto_Tests-Info.plist */,
+				4EAFFAE9BDC84C387249D3596F37764B /* Pods-Giotto_Tests-umbrella.h */,
+				CF99E078F5DE41A56D9D37AA879EC636 /* Pods-Giotto_Tests.debug.xcconfig */,
+				80A35FDEB834D4439996FDB157719F58 /* Pods-Giotto_Tests.release.xcconfig */,
 			);
 			name = "Pods-Giotto_Tests";
 			path = "Target Support Files/Pods-Giotto_Tests";
 			sourceTree = "<group>";
 		};
-		4FB43CF47FEA2E450FB4F5FA48B254C2 /* Giotto */ = {
+		4BC24FC4C0D1FE4889A51B0C3A8D42B1 /* Pods-Giotto_Example */ = {
 			isa = PBXGroup;
 			children = (
-				2C288C63BB6F830A2D50FACC8C3EBCA0 /* Core */,
-				C0E5CE574E428C769B1C842DC482C922 /* Support Files */,
-			);
-			name = Giotto;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		751046AAFBD1F4CEE7721F4E79F2FFBD /* Pods-Giotto_Example */ = {
-			isa = PBXGroup;
-			children = (
-				062A985857DDBC0658D1F3E5C7F48B8C /* Info.plist */,
-				F452D01A218DF54CDB361308A2326E76 /* Pods-Giotto_Example.modulemap */,
-				5D5950E44383F0527A43088C8B3F6303 /* Pods-Giotto_Example-acknowledgements.markdown */,
-				48189EA5734A5AFB6DDC4EFED741D0C0 /* Pods-Giotto_Example-acknowledgements.plist */,
-				D7F4DB63A260B1FE3501473D5C6A43DA /* Pods-Giotto_Example-dummy.m */,
-				1C66AAE3A58C5A8583878060501EB539 /* Pods-Giotto_Example-frameworks.sh */,
-				6DF2E01533E4761786E64B97D25F6C4A /* Pods-Giotto_Example-resources.sh */,
-				258C4BD38DA973D7959D8DA0AF54BE00 /* Pods-Giotto_Example-umbrella.h */,
-				587651C3A86F36D297281000BE80F445 /* Pods-Giotto_Example.debug.xcconfig */,
-				782363033834C8FB68B86CBACBA7F3F1 /* Pods-Giotto_Example.release.xcconfig */,
+				27C4FD463F27A2873C1ED163C8B4F949 /* Pods-Giotto_Example.modulemap */,
+				232864C7C2F7B330500BA91A9FA8F8E1 /* Pods-Giotto_Example-acknowledgements.markdown */,
+				9B63214096C46A32BD80324D6BE97FF9 /* Pods-Giotto_Example-acknowledgements.plist */,
+				52F7FD5B2BE03C69A86DE32AD3BB9294 /* Pods-Giotto_Example-dummy.m */,
+				B2A5FC86EFC8300EF27160844F177F39 /* Pods-Giotto_Example-frameworks.sh */,
+				C55E4ED72E1075D666622A68C23B7E4C /* Pods-Giotto_Example-Info.plist */,
+				64D75593397E8CF799405C2D42E8ADB1 /* Pods-Giotto_Example-umbrella.h */,
+				7A8FCDB135547674B28CBFA3E389F213 /* Pods-Giotto_Example.debug.xcconfig */,
+				0195D1FADD6C416A617807FEF54304A9 /* Pods-Giotto_Example.release.xcconfig */,
 			);
 			name = "Pods-Giotto_Example";
 			path = "Target Support Files/Pods-Giotto_Example";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		52DA8108EC1B7E86281B38097D99F479 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				8D42DB5D606B6F4D27A1E4CEC38CF323 /* Development Pods */,
-				915A12CAA73CA78253175A686540892A /* Frameworks */,
-				A06DD9DE1CFC442A5316AD01CEE504DF /* Pods */,
-				917A1036804DCE787D421121F7444D47 /* Products */,
-				3C3176C96A4687DA0C908A6C551980F9 /* Targets Support Files */,
+				4BC24FC4C0D1FE4889A51B0C3A8D42B1 /* Pods-Giotto_Example */,
+				275685F891C9333F4DCD2332984B8235 /* Pods-Giotto_Tests */,
 			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8D42DB5D606B6F4D27A1E4CEC38CF323 /* Development Pods */ = {
+		57A948C81FECD7FA4E18F93BCAB37770 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4FB43CF47FEA2E450FB4F5FA48B254C2 /* Giotto */,
+				1CED84087E3921D8616E59412A71EC7F /* Giotto.podspec */,
+				89BD0C7D58E81E9D78A4C4924400CBA6 /* LICENSE */,
+				34402C52C69A2005F9A7A2153783ED1A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		655E1B0466DAFD9DA6675E12F5FF6BB4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E51B108565BC3AAF8E3ECE967CE391B7 /* Giotto */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		915A12CAA73CA78253175A686540892A /* Frameworks */ = {
+		65CA41807643ED9C63CEE9120510C305 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A6B9A4251A01B6487A38AFCB459091C9 /* Blabber.framework */,
-				D913C87184C16790934BF85EDA44E1C4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		917A1036804DCE787D421121F7444D47 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BA41E2C8A6853623E0E0D4093AF3A3F7 /* Blabber.framework */,
-				9ECDDEA1BE5FE28DE7D9FEC3416643EE /* Giotto.framework */,
-				968375FD51057A4287F57A8443AAAB8A /* Pods_Giotto_Example.framework */,
-				CF573EC5601FFB5D6FDAC59F6BA56FEA /* Pods_Giotto_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9579C475E9E5891BD96DED29F188EA6B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				163B05E292EFB4219175D9010B0FA8FB /* Blabber.modulemap */,
-				78C8FA252FE5221E98ABAF7812AEAE74 /* Blabber.xcconfig */,
-				1F4C0EF5C84A5A12912D220C66AAB06F /* Blabber-dummy.m */,
-				F1B55225C270EA4C027F85055E84E99B /* Blabber-prefix.pch */,
-				3C31FAE9E2A575B096B5FC53FAD2760C /* Blabber-umbrella.h */,
-				D01A43792D3E57FD74E474E690616114 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Blabber";
-			sourceTree = "<group>";
-		};
-		A06DD9DE1CFC442A5316AD01CEE504DF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F9DBF42F57800AAC85AA94AE17FBD368 /* Blabber */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		AB05FDC827C7CDA02C7086A1E40C9553 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				910C9FD59BD014FEC9B40E735ED93A0D /* CALayer+ThemeManager.h */,
-				D9666C947EE4B894BC71BDBF52524A1F /* CALayer+ThemeManager.m */,
-				7FCC3D798D47EBF1501EC42CD443A0E9 /* MKAnnotationView+ThemeManager.h */,
-				54341A4542AB9D46666884F120CF1809 /* MKAnnotationView+ThemeManager.m */,
-				3997F1C8A2F274266269E59201D332F4 /* NSObject+ThemeManager.h */,
-				0FE9FEF66FD8296215B92D8923D5233E /* NSObject+ThemeManager.m */,
-				84C5188DE14A8FEF45037D8F89B4B900 /* SDThemeLogger.h */,
-				BDC9D24DEB0A1A29E1259EEFC8166138 /* SDThemeManager.h */,
-				1BBC948F2AB1B3CF785FE0FD6D5DCB9B /* SDThemeManager.m */,
-				B3F27653B8F276B8C7CDC59B0CFE6FEE /* UIButton+ThemeManager.h */,
-				D52EBCE7ABA83B3625474C8E53E10FF9 /* UIButton+ThemeManager.m */,
-				51E04DE022DA3A3AE1A7564106080DFA /* UIImageView+ThemeManager.h */,
-				A5DD230FF1F6E78F9E242D62728143A2 /* UIImageView+ThemeManager.m */,
-				C3F8C13D6F4F69393119DD5A85024F82 /* UISegmentedControl+ThemeManager.h */,
-				8101BDEB0B7632A6D15B270B6B8E34FD /* UISegmentedControl+ThemeManager.m */,
-				86B9DAA1D7E637F399767769FF891822 /* UITableView+ThemeManager.h */,
-				1FDB8796E089F7D3266E60F0D0BEE0D9 /* UITableView+ThemeManager.m */,
-				382BF68798253C8C78F1CA4D85D8E3CC /* UITableViewCell+ThemeManager.h */,
-				25C6BD8BCBC30FA8D185EBADA7831E45 /* UITableViewCell+ThemeManager.m */,
-				729260EDDC3EC32BACF043A1EF0DE6AE /* UITextField+ThemeManager.h */,
-				B60A70016ECE3A9C24696D1C80D12F66 /* UITextField+ThemeManager.m */,
-				48DBB4A18CA0578FFF7ACBA384FA1072 /* UIView+ThemeManager.h */,
-				AD8AD7E41EFA6C4500BD6096 /* UIView+ThemeManager.m */,
-				DBDE2B9B5755D7DC5393B3413B8EF6E7 /* Utils */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C0E5CE574E428C769B1C842DC482C922 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				15FA1D6E10B6FFE7C83BDA272000DC5B /* Giotto.modulemap */,
-				856B44292C2E960539C970272F3696A3 /* Giotto.xcconfig */,
-				D7A7F0964F3CF15CDDD9A94D26D4BF4D /* Giotto-dummy.m */,
-				30B755B96AD44EDB36DB3D4C0DBF8DEA /* Giotto-prefix.pch */,
-				E4A5CA370D9EA264509B00127DD7CEBC /* Giotto-umbrella.h */,
-				0D07BCA03FFF164F009DDCC357B935C3 /* Info.plist */,
+				397C19C80140A3C860675E10C161A0D7 /* Giotto.modulemap */,
+				66A7C55E710E9ABC6578C9604307A63D /* Giotto.xcconfig */,
+				A4ACFCD9163B38A32B0CCBB9BB8464F1 /* Giotto-dummy.m */,
+				C133F29EC9AB295A7445127193BE9C1D /* Giotto-Info.plist */,
+				BA4B4B2BFB068A239EEDB4DE04591AB8 /* Giotto-prefix.pch */,
+				6C6CCA8BBF222E026A932423BF1FF8DC /* Giotto-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Giotto";
 			sourceTree = "<group>";
 		};
-		C3642CD806D9AB19941DC553D2140915 /* Giotto */ = {
+		79B604D7F61BC0B134BD7CD1611331E2 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AB05FDC827C7CDA02C7086A1E40C9553 /* Classes */,
-			);
-			path = Giotto;
-			sourceTree = "<group>";
-		};
-		D8BDEE9059BD2F2B4F3642757F81E38C /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				DB6B4CF19F2837769DB5352AE19556C8 /* SDLogger.h */,
-				53DC9A92FCFAD29B5734C814F6F80F28 /* SDLogger.m */,
-				A2823AC29388B56535531F9974B63E7A /* SDLogger+Additions.swift */,
-				237EDE6CAC2A4D23F9FC1C4A026F15F1 /* SDLogModules.h */,
-				CD0EC7B21671691C63B6846762062F53 /* SysdataCoreDev-Bridging-Header.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		D913C87184C16790934BF85EDA44E1C4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				E8BB18268F36DBEE0B9DAFA764F5D52F /* Foundation.framework */,
+				2D2BDFBF68BA9D516F4A7FE70E6ABCA1 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		DBDE2B9B5755D7DC5393B3413B8EF6E7 /* Utils */ = {
+		7C3ED96667723A15417999637CC0D05F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D05ADFE9D08AE3F4355336979C712935 /* UIImage+Giotto.h */,
-				1FB63B6A1579E32CFA9591CDFA72CE73 /* UIImage+Giotto.m */,
+				F16BA70C1486691717327BFCB3D6E8D7 /* Blabber-Bridging-Header.h */,
+				8730A4C81AA9C963F1A5F98F442055DC /* SDLogger.h */,
+				E7AA7B469CCD12FE41264A6A7583C072 /* SDLogger.m */,
+				F04B9715F1559F7785EB035BC40AAB0C /* SDLogger+Additions.swift */,
+				229C3407B563F9C9C1A96672C8A8D051 /* SDLogModules.h */,
 			);
-			path = Utils;
+			name = Core;
 			sourceTree = "<group>";
 		};
-		F9DBF42F57800AAC85AA94AE17FBD368 /* Blabber */ = {
+		955C605D0D518958A7C1E875753B6254 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D8BDEE9059BD2F2B4F3642757F81E38C /* Core */,
-				9579C475E9E5891BD96DED29F188EA6B /* Support Files */,
+				F321E23C844BF68E9FC7DBF1BA1489D5 /* UIImage+Giotto.h */,
+				9EC2070FAA3C3DC76C460038B361366A /* UIImage+Giotto.m */,
 			);
+			name = Utils;
+			path = Giotto/Classes/Utils;
+			sourceTree = "<group>";
+		};
+		9964732B485F3CC9D2F71A6731E56DD2 /* Blabber */ = {
+			isa = PBXGroup;
+			children = (
+				7C3ED96667723A15417999637CC0D05F /* Core */,
+				F60C78368E7A14B225C4AD38695428D0 /* Support Files */,
+			);
+			name = Blabber;
 			path = Blabber;
+			sourceTree = "<group>";
+		};
+		A820A317223EFFD4E9C428400EB68EF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				382D7F4C7DBE5F9930E7E86555A0CA93 /* Blabber.framework */,
+				E8107D9ED9EE532BB0B1351735ADD2F9 /* Giotto.framework */,
+				C88629FB90C7EB44C0A082A945977557 /* Pods_Giotto_Example.framework */,
+				B5071CC872CFEFAA5E914B8E0AA7C04B /* Pods_Giotto_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB7E17FC25A035A54522029A1F114909 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFB4AB23887B3824E23CC040C938905A /* Blabber.framework */,
+				79B604D7F61BC0B134BD7CD1611331E2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFC8005685C517C737F4EC04A2E46B64 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CB595EA573CEB34DF372EF57884DF0FF /* CALayer+ThemeManager.h */,
+				86F1E916389EF0B5E90BABDD698ED9D6 /* CALayer+ThemeManager.m */,
+				9EAF32C6A2CA604D118F31FF52C8BC2A /* MKAnnotationView+ThemeManager.h */,
+				ABE14F7BC2EF6833D8EA1B7FE61C8AEC /* MKAnnotationView+ThemeManager.m */,
+				767590C45F88B284123A1BA4ECCFB190 /* NSObject+ThemeManager.h */,
+				C2495E6FF3F1FA96F741DF47742CB4D8 /* NSObject+ThemeManager.m */,
+				A95F437D7F01B06BEE52AB57B991ACB5 /* SDThemeLogger.h */,
+				D356E6D134D33BFF78674C07BA2B4C88 /* SDThemeManager.h */,
+				4CEB771D90753671781C506CC7C566C0 /* SDThemeManager.m */,
+				B62681BE60A81718CEF35B90827FDF05 /* UIButton+ThemeManager.h */,
+				A4BD624B6FA077E87C6F6D204362A9F1 /* UIButton+ThemeManager.m */,
+				5C936F570BBF3E428A93A4C5E45E2638 /* UIImageView+ThemeManager.h */,
+				F528E6D8DC2775CE330E5D41C94D8F27 /* UIImageView+ThemeManager.m */,
+				301A397D3B1FB59A07A1A237D4E8F602 /* UISegmentedControl+ThemeManager.h */,
+				2EBC92FAF0F21FD920EE15392F887537 /* UISegmentedControl+ThemeManager.m */,
+				BE8C4F725E29562F86FE4455FDB5E8EF /* UITableView+ThemeManager.h */,
+				B8D45FD8361A9CA9EA9822B4E8BF4EFC /* UITableView+ThemeManager.m */,
+				5D7645AECCD5E26380F2B7CB7971D5C3 /* UITableViewCell+ThemeManager.h */,
+				FC56EE135D99C9FA0AFE381128D38D82 /* UITableViewCell+ThemeManager.m */,
+				75EB9DF169C88E8906005E13176BB6FA /* UITextField+ThemeManager.h */,
+				4C0FC3F801D206EF4D3ED270FAB9EEED /* UITextField+ThemeManager.m */,
+				C6E0E6A2019EA19947D34A0F63AFDD8C /* UIView+ThemeManager.h */,
+				035A536BBDAB8AEE8CC77E7272537BAB /* UIView+ThemeManager.m */,
+				955C605D0D518958A7C1E875753B6254 /* Utils */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				655E1B0466DAFD9DA6675E12F5FF6BB4 /* Development Pods */,
+				AB7E17FC25A035A54522029A1F114909 /* Frameworks */,
+				D56F71A9FE7EAF9D88047134ECF7574B /* Pods */,
+				A820A317223EFFD4E9C428400EB68EF5 /* Products */,
+				52DA8108EC1B7E86281B38097D99F479 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D56F71A9FE7EAF9D88047134ECF7574B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9964732B485F3CC9D2F71A6731E56DD2 /* Blabber */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E51B108565BC3AAF8E3ECE967CE391B7 /* Giotto */ = {
+			isa = PBXGroup;
+			children = (
+				AFC8005685C517C737F4EC04A2E46B64 /* Core */,
+				57A948C81FECD7FA4E18F93BCAB37770 /* Pod */,
+				65CA41807643ED9C63CEE9120510C305 /* Support Files */,
+			);
+			name = Giotto;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F60C78368E7A14B225C4AD38695428D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF71C4545700C2F7C9732E4596471E25 /* Blabber.modulemap */,
+				3031D6C9B9EDBFA6BE2D9CB496C76169 /* Blabber.xcconfig */,
+				5923A0579DF335C4E78EF4EAA173C1EE /* Blabber-dummy.m */,
+				4FE206C1A2D037E811A4AA24DDDB7C5C /* Blabber-Info.plist */,
+				239873FB5B6BC1AB17841355A68E35C4 /* Blabber-prefix.pch */,
+				CCF39CDFE98F91BB4750715A9D00E126 /* Blabber-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Blabber";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		767F33FA5CD89CDB2324162E35B929E7 /* Headers */ = {
+		32C65592C0C61504D5F9F802469B59F2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A9AE785C148AAC710D6A777D5E446B /* Pods-Giotto_Tests-umbrella.h in Headers */,
+				8F59CE47847548784093D936338B9C06 /* Blabber-Bridging-Header.h in Headers */,
+				8A50DFB86BF1CF8D5640995202664F15 /* Blabber-umbrella.h in Headers */,
+				8F3052795FA10D22FD8C80D7877BD8C1 /* SDLogger.h in Headers */,
+				E12FF6271BFF175AC5A394CCF21155A8 /* SDLogModules.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		989860FD5E2072E508597C6B7E8587EB /* Headers */ = {
+		456496F2377004F545B7ABB44A4EE2E0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9152A7626C3BF704E43A4B83BE3385E /* Pods-Giotto_Example-umbrella.h in Headers */,
+				E88D9867E881B2BFCAE9A504A5A5E06C /* CALayer+ThemeManager.h in Headers */,
+				0947FD617C7028805A0A37577591056A /* Giotto-umbrella.h in Headers */,
+				9072CD30C256A8887F92AB380065ED69 /* MKAnnotationView+ThemeManager.h in Headers */,
+				2A64DDF9E60CA3633F34C5E13D21BAB2 /* NSObject+ThemeManager.h in Headers */,
+				AB085EFEB85039AE870976C07D753B07 /* SDThemeLogger.h in Headers */,
+				78DD8CAAA9EF54B66BB20C1C727F3266 /* SDThemeManager.h in Headers */,
+				D48C6AD3A72F17E1782EBE169AD68720 /* UIButton+ThemeManager.h in Headers */,
+				1412469172EC91882924D6C1C376A212 /* UIImage+Giotto.h in Headers */,
+				A59817763A78B19FC2C3FAB90ED94CC5 /* UIImageView+ThemeManager.h in Headers */,
+				04322E04C2DB683C3989AC1DF61A2D69 /* UISegmentedControl+ThemeManager.h in Headers */,
+				8DA7BFAC4A78027F6741FC5C13FDF243 /* UITableView+ThemeManager.h in Headers */,
+				90EFD805D49D3CC24302508C74DB4E12 /* UITableViewCell+ThemeManager.h in Headers */,
+				4B4E86F3E773D490BAC7FF45269288F8 /* UITextField+ThemeManager.h in Headers */,
+				B45298CA49A963E27950DC79F9147A8B /* UIView+ThemeManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BAF8DB8139249CC6AEF2A645F1C73C7C /* Headers */ = {
+		999CBFD9DF5370EBE720B6F23FF56BE3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44487B35A923529B572D77565D90C9C3 /* CALayer+ThemeManager.h in Headers */,
-				4B9EF76A14FD87A89A4F18D6D3AFF10F /* Giotto-umbrella.h in Headers */,
-				D472C3C35A839DC6CC8EC722743438B4 /* MKAnnotationView+ThemeManager.h in Headers */,
-				087D629CF1A2EDF59F1783DEF7E118B4 /* NSObject+ThemeManager.h in Headers */,
-				BB45F89B556FCDB410B4D91492A3A82A /* SDThemeLogger.h in Headers */,
-				BD6D600DFF3E83398821DF2031AFFB68 /* SDThemeManager.h in Headers */,
-				821FC557951C6D696B8556712DC3D357 /* UIButton+ThemeManager.h in Headers */,
-				1E57CA9EF7D71D03FD5858979C1A26D2 /* UIImage+Giotto.h in Headers */,
-				6506158A6FAA4A0719EF47E4CCB7F4FE /* UIImageView+ThemeManager.h in Headers */,
-				90AD0151D0BD27C25F5309C3F1D0EAE9 /* UISegmentedControl+ThemeManager.h in Headers */,
-				E84BD8412791AFB98017E3384D9CEB0B /* UITableView+ThemeManager.h in Headers */,
-				630FEED2F55342F5A79A20373F4995BE /* UITableViewCell+ThemeManager.h in Headers */,
-				973993B4ED6BC779EA46F2C9635C1AC8 /* UITextField+ThemeManager.h in Headers */,
-				00166097BBA369E56E36C156D078F8E8 /* UIView+ThemeManager.h in Headers */,
+				2EBA298C539544D58A8AD560084FC35E /* Pods-Giotto_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB63E58C0F027975DD0F0AF66DEBDE6F /* Headers */ = {
+		C2499751EA400F77648E26402850D05B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD5F72A65B6CB9FD9D60306573F40C5 /* Blabber-umbrella.h in Headers */,
-				4AFFB24B194F595B512D2425195052BF /* SDLogger.h in Headers */,
-				3196F7BA1885C3536815890325D7685D /* SDLogModules.h in Headers */,
-				D0AFBC6EEB8DF006ED471FE6A522569A /* SysdataCoreDev-Bridging-Header.h in Headers */,
+				F487A75FD2BFD9E4B9B75ADFEAFBFC7E /* Pods-Giotto_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D210D6855C36B75971BF223E856278E /* Pods-Giotto_Tests */ = {
+		4389D51C3AFAF7922FBD0914D1CCBCC7 /* Pods-Giotto_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6A6A37D1B074A33D234941A9F9EC68F /* Build configuration list for PBXNativeTarget "Pods-Giotto_Tests" */;
+			buildConfigurationList = E42F2CB82976F6D233F6D923FC8F5F37 /* Build configuration list for PBXNativeTarget "Pods-Giotto_Example" */;
 			buildPhases = (
-				EAE47BA152B565279314DA0A1A3872CF /* Sources */,
-				A0AA5A5AD900C41DE5B3D04966365D27 /* Frameworks */,
-				767F33FA5CD89CDB2324162E35B929E7 /* Headers */,
+				999CBFD9DF5370EBE720B6F23FF56BE3 /* Headers */,
+				A9FAE9F761567AF0E352A522B6072ED0 /* Sources */,
+				CACC96C7373BCBB267C9A1CAA3EB5C59 /* Frameworks */,
+				C8B73B8A6C76BB4FD167A77C872A35B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D74ED0D8D9C693CA2A5FDE5CE81A260 /* PBXTargetDependency */,
+				0BA237C5F893396B39E3E0234F662778 /* PBXTargetDependency */,
 			);
-			name = "Pods-Giotto_Tests";
-			productName = "Pods-Giotto_Tests";
-			productReference = CF573EC5601FFB5D6FDAC59F6BA56FEA /* Pods_Giotto_Tests.framework */;
+			name = "Pods-Giotto_Example";
+			productName = "Pods-Giotto_Example";
+			productReference = C88629FB90C7EB44C0A082A945977557 /* Pods_Giotto_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4D15E9BDBD6AEEAA3366ECA54B7A51B0 /* Blabber */ = {
+		A4AF8FDF93BFECDE48A78A661511EBBE /* Blabber */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E26B306AD2AEC77D8323B69F5525AB0 /* Build configuration list for PBXNativeTarget "Blabber" */;
+			buildConfigurationList = EF2477DAF99F3B5480BB333675EBA8C0 /* Build configuration list for PBXNativeTarget "Blabber" */;
 			buildPhases = (
-				AA0901FFCFF5905DAA1CCBFBF7E27B86 /* Sources */,
-				369407694411A7C3613FCCE06FA7884B /* Frameworks */,
-				CB63E58C0F027975DD0F0AF66DEBDE6F /* Headers */,
+				32C65592C0C61504D5F9F802469B59F2 /* Headers */,
+				6778E9E6155385A81F420A79DB897D0F /* Sources */,
+				C56BDFC8CF7727032B4F44EFAFE0D75F /* Frameworks */,
+				4E67C70074480174DCAEC62AF8F880C3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -486,569 +491,615 @@
 			);
 			name = Blabber;
 			productName = Blabber;
-			productReference = BA41E2C8A6853623E0E0D4093AF3A3F7 /* Blabber.framework */;
+			productReference = 382D7F4C7DBE5F9930E7E86555A0CA93 /* Blabber.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4E374A2EDB8A6DD35E4D88D28B80F29F /* Giotto */ = {
+		B7FC822E3282910A2D087C2B63EAF86E /* Giotto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 743C225ECED285DF5E47541027BBAC5C /* Build configuration list for PBXNativeTarget "Giotto" */;
+			buildConfigurationList = AE451CB0B3AC88C204382DAE4369C513 /* Build configuration list for PBXNativeTarget "Giotto" */;
 			buildPhases = (
-				C3F8C8C4F51A8B523D5F03222309F247 /* Sources */,
-				B99B0622A7F303B4D2935475E6E97C2F /* Frameworks */,
-				BAF8DB8139249CC6AEF2A645F1C73C7C /* Headers */,
+				456496F2377004F545B7ABB44A4EE2E0 /* Headers */,
+				577BEE9A3C1295DC1036AD7EEA5CF058 /* Sources */,
+				7B9F62AC7EAD9E91C11D7F7E37BFC9C8 /* Frameworks */,
+				D48E3299D4AD524E8A91B93014F9F119 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F6D247B2420CE78F80E95A9C9F8DE0A /* PBXTargetDependency */,
+				28951EB0732A3814BCCFB231DDFCD1CA /* PBXTargetDependency */,
 			);
 			name = Giotto;
 			productName = Giotto;
-			productReference = 9ECDDEA1BE5FE28DE7D9FEC3416643EE /* Giotto.framework */;
+			productReference = E8107D9ED9EE532BB0B1351735ADD2F9 /* Giotto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E7F92C998C07C5F81413A8E0AB988242 /* Pods-Giotto_Example */ = {
+		E7484952392C56633AE6E9B2EC90F13E /* Pods-Giotto_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAB3368B81111FC81790951B30236AF3 /* Build configuration list for PBXNativeTarget "Pods-Giotto_Example" */;
+			buildConfigurationList = 1D5086897C3B645E648DC1E34B45CB8B /* Build configuration list for PBXNativeTarget "Pods-Giotto_Tests" */;
 			buildPhases = (
-				2D65E887C8AA1F7FE2F6B76046C3838D /* Sources */,
-				80BCE59C7761410D5665550D0DC29228 /* Frameworks */,
-				989860FD5E2072E508597C6B7E8587EB /* Headers */,
+				C2499751EA400F77648E26402850D05B /* Headers */,
+				1DA4A85CD36FE1348D31E36BC921D1F5 /* Sources */,
+				F5CD9BDF9C1B765B2E05587C26247B68 /* Frameworks */,
+				EAE418FD1200253404199CB76158D64D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9D140B8DBA496DBF37FAC8CBEAAE2B3F /* PBXTargetDependency */,
-				8E0898C806058A3F0177ADE8281B45F6 /* PBXTargetDependency */,
+				3CB7CE158877639D84388716D8383D0E /* PBXTargetDependency */,
 			);
-			name = "Pods-Giotto_Example";
-			productName = "Pods-Giotto_Example";
-			productReference = 968375FD51057A4287F57A8443AAAB8A /* Pods_Giotto_Example.framework */;
+			name = "Pods-Giotto_Tests";
+			productName = "Pods-Giotto_Tests";
+			productReference = B5071CC872CFEFAA5E914B8E0AA7C04B /* Pods_Giotto_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 917A1036804DCE787D421121F7444D47 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A820A317223EFFD4E9C428400EB68EF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4D15E9BDBD6AEEAA3366ECA54B7A51B0 /* Blabber */,
-				4E374A2EDB8A6DD35E4D88D28B80F29F /* Giotto */,
-				E7F92C998C07C5F81413A8E0AB988242 /* Pods-Giotto_Example */,
-				2D210D6855C36B75971BF223E856278E /* Pods-Giotto_Tests */,
+				A4AF8FDF93BFECDE48A78A661511EBBE /* Blabber */,
+				B7FC822E3282910A2D087C2B63EAF86E /* Giotto */,
+				4389D51C3AFAF7922FBD0914D1CCBCC7 /* Pods-Giotto_Example */,
+				E7484952392C56633AE6E9B2EC90F13E /* Pods-Giotto_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		4E67C70074480174DCAEC62AF8F880C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8B73B8A6C76BB4FD167A77C872A35B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D48E3299D4AD524E8A91B93014F9F119 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAE418FD1200253404199CB76158D64D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		2D65E887C8AA1F7FE2F6B76046C3838D /* Sources */ = {
+		1DA4A85CD36FE1348D31E36BC921D1F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6BF96EBC408F91B8A75D0C005DEFC9 /* Pods-Giotto_Example-dummy.m in Sources */,
+				4F49F3ABAD576B7E105969CCDE863BCF /* Pods-Giotto_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA0901FFCFF5905DAA1CCBFBF7E27B86 /* Sources */ = {
+		577BEE9A3C1295DC1036AD7EEA5CF058 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35F9FB09B229290B3A95782D47FAA031 /* Blabber-dummy.m in Sources */,
-				1B8EC47C4DD20F22E8DFAB8C1427DA09 /* SDLogger+Additions.swift in Sources */,
-				AD8AD7E51EFA6C4500BD6096 /* UIView+ThemeManager.m in Sources */,
-				2CA44343AEADC2F3D89A8897C816CA1B /* SDLogger.m in Sources */,
+				091E001F6189535EDE2A79405FACC303 /* CALayer+ThemeManager.m in Sources */,
+				6C5FD7C55863442968E28D10EFFDF757 /* Giotto-dummy.m in Sources */,
+				2943D44546E0DB6F48D0FD624C6F3B04 /* MKAnnotationView+ThemeManager.m in Sources */,
+				88D1C07E667B932F24AE59281940060F /* NSObject+ThemeManager.m in Sources */,
+				AE1FF9D10711F7555BE61582E422F853 /* SDThemeManager.m in Sources */,
+				C20F2B139A3EA81E2203F4136162AE96 /* UIButton+ThemeManager.m in Sources */,
+				0F448DC69E7F7DCB738702DBD8AE8065 /* UIImage+Giotto.m in Sources */,
+				EED0AAE430314BB938C1606B253C5880 /* UIImageView+ThemeManager.m in Sources */,
+				1FCABE082BE808C7B5C579EC3AF1D64D /* UISegmentedControl+ThemeManager.m in Sources */,
+				74D260916893041D9C2D675F269D5B17 /* UITableView+ThemeManager.m in Sources */,
+				17D4EDF490C1A3D242C373697B3DB03B /* UITableViewCell+ThemeManager.m in Sources */,
+				1E30F3E6AF8CE8471B54983EC77CC5EE /* UITextField+ThemeManager.m in Sources */,
+				44AE136DE8B9A264D8A684B74A81B146 /* UIView+ThemeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3F8C8C4F51A8B523D5F03222309F247 /* Sources */ = {
+		6778E9E6155385A81F420A79DB897D0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ABEC781D047AB80079F0EDC0CCB850F /* CALayer+ThemeManager.m in Sources */,
-				D1CCBAAED93A991FE3D9D6AC607BDEAD /* Giotto-dummy.m in Sources */,
-				AE708BABDE2E4C174D9D9D873088D75D /* MKAnnotationView+ThemeManager.m in Sources */,
-				E0FBF7DB719BDBA263B8764D23BA303F /* NSObject+ThemeManager.m in Sources */,
-				D68873B75F70A2F9C5E12854DAE98A3E /* SDThemeManager.m in Sources */,
-				48FDF8E9806C4809E81496014E9BA029 /* UIButton+ThemeManager.m in Sources */,
-				17D5E7E75600F4FA983848F72444B875 /* UIImage+Giotto.m in Sources */,
-				2F5992178DC0DFBC9464307C6C2B994C /* UIImageView+ThemeManager.m in Sources */,
-				3CF8699FEA0A5AF2DBF9181DB1277AAF /* UISegmentedControl+ThemeManager.m in Sources */,
-				727F6E6A2E8C0BB7CDB11636F91D4EA8 /* UITableView+ThemeManager.m in Sources */,
-				BFFF5EF6E1E98AEF26CF60D9FFF2F5EA /* UITableViewCell+ThemeManager.m in Sources */,
-				BD9F04584AEF1E4F92B7429EAA59ABF2 /* UITextField+ThemeManager.m in Sources */,
+				CBA08D22752AE9C203EC3BCE70358697 /* Blabber-dummy.m in Sources */,
+				3FF3199A29EDC4BA2CAEB18CFA7C0859 /* SDLogger+Additions.swift in Sources */,
+				A40BEBAA427C249C29DCD12ABBE28F80 /* SDLogger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAE47BA152B565279314DA0A1A3872CF /* Sources */ = {
+		A9FAE9F761567AF0E352A522B6072ED0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E823C2A9907CFF82CAA10AFA4DBD0A76 /* Pods-Giotto_Tests-dummy.m in Sources */,
+				CAFA2AD8A0C6348A332A88DCD6662D24 /* Pods-Giotto_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F6D247B2420CE78F80E95A9C9F8DE0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Blabber;
-			target = 4D15E9BDBD6AEEAA3366ECA54B7A51B0 /* Blabber */;
-			targetProxy = C975D2E8CFA6FA0D733A3A1B610CA30D /* PBXContainerItemProxy */;
-		};
-		8E0898C806058A3F0177ADE8281B45F6 /* PBXTargetDependency */ = {
+		0BA237C5F893396B39E3E0234F662778 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Giotto;
-			target = 4E374A2EDB8A6DD35E4D88D28B80F29F /* Giotto */;
-			targetProxy = 15142223B68C828E1F708AE9708A80B2 /* PBXContainerItemProxy */;
+			target = B7FC822E3282910A2D087C2B63EAF86E /* Giotto */;
+			targetProxy = F781975D53BE2DDD036AD94974AD3CBA /* PBXContainerItemProxy */;
 		};
-		9D140B8DBA496DBF37FAC8CBEAAE2B3F /* PBXTargetDependency */ = {
+		28951EB0732A3814BCCFB231DDFCD1CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Blabber;
-			target = 4D15E9BDBD6AEEAA3366ECA54B7A51B0 /* Blabber */;
-			targetProxy = 4C4CCF5AC2ED2861499512EA1E92695C /* PBXContainerItemProxy */;
+			target = A4AF8FDF93BFECDE48A78A661511EBBE /* Blabber */;
+			targetProxy = 45A6295D9813E9757B1A27D4701E50C2 /* PBXContainerItemProxy */;
+		};
+		3CB7CE158877639D84388716D8383D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Giotto_Example";
+			target = 4389D51C3AFAF7922FBD0914D1CCBCC7 /* Pods-Giotto_Example */;
+			targetProxy = 03753DADB50156F560BC52BAE8CEB5B6 /* PBXContainerItemProxy */;
+		};
+		3D74ED0D8D9C693CA2A5FDE5CE81A260 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Blabber;
+			target = A4AF8FDF93BFECDE48A78A661511EBBE /* Blabber */;
+			targetProxy = C05924992FA35E0943051A56EC9EB872 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		09F2FD07B8ECCB73DED72BC0E1E77044 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F538CF4D19E17642E3F90492B61C534F /* Pods-Giotto_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Giotto_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Giotto_Tests/Pods-Giotto_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Giotto_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		19D3451CF36E9D3BA74623F886855500 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 587651C3A86F36D297281000BE80F445 /* Pods-Giotto_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Giotto_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Giotto_Example/Pods-Giotto_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Giotto_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+		07B3DBAD4E15EC23FB08F6B8B4C9D9F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		5955D1879E19293E6D027DD67807FA19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 856B44292C2E960539C970272F3696A3 /* Giotto.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Giotto/Giotto-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Giotto/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Giotto/Giotto.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Giotto;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		675C51F41BE0F63A412FB562C6943986 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 856B44292C2E960539C970272F3696A3 /* Giotto.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Giotto/Giotto-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Giotto/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Giotto/Giotto.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Giotto;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8EC7B61B97CEBD9ABF49D556B962A04D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D95F3B9D5BD07A12992BCD6AFE485CC /* Pods-Giotto_Tests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Giotto_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Giotto_Tests/Pods-Giotto_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Giotto_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AB3EA07DF10F5A0D7112308E52693952 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C8FA252FE5221E98ABAF7812AEAE74 /* Blabber.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Blabber/Blabber-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Blabber/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Blabber/Blabber.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Blabber;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		246FA4226DFBED8460DF79E9B6892488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A7C55E710E9ABC6578C9604307A63D /* Giotto.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Giotto/Giotto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Giotto/Giotto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Giotto/Giotto.modulemap";
+				PRODUCT_MODULE_NAME = Giotto;
+				PRODUCT_NAME = Giotto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		EFC645949D98EA1330D160A9612BCCB4 /* Release */ = {
+		301D98EACE8847D56D84CCC061FA6A30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78C8FA252FE5221E98ABAF7812AEAE74 /* Blabber.xcconfig */;
+			baseConfigurationReference = 3031D6C9B9EDBFA6BE2D9CB496C76169 /* Blabber.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Blabber/Blabber-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Blabber/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Blabber/Blabber-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Blabber/Blabber.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = Blabber;
 				PRODUCT_NAME = Blabber;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		FAFBB2F92968F087EB9F5A791689CAA5 /* Release */ = {
+		58ED0B7F1B9F8B080A0B6E9000CCF869 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 782363033834C8FB68B86CBACBA7F3F1 /* Pods-Giotto_Example.release.xcconfig */;
+			baseConfigurationReference = 0195D1FADD6C416A617807FEF54304A9 /* Pods-Giotto_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Giotto_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Giotto_Example/Pods-Giotto_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Giotto_Example/Pods-Giotto_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Giotto_Example;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A1D22B52C752087F31BFEEDD7649DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A35FDEB834D4439996FDB157719F58 /* Pods-Giotto_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Giotto_Tests/Pods-Giotto_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Giotto_Tests/Pods-Giotto_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82BF88ABF2065B7803E549B88D06539C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3031D6C9B9EDBFA6BE2D9CB496C76169 /* Blabber.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Blabber/Blabber-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Blabber/Blabber-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Blabber/Blabber.modulemap";
+				PRODUCT_MODULE_NAME = Blabber;
+				PRODUCT_NAME = Blabber;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		84739617123CBE5D406B731EED86ABDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A7C55E710E9ABC6578C9604307A63D /* Giotto.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Giotto/Giotto-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Giotto/Giotto-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Giotto/Giotto.modulemap";
+				PRODUCT_MODULE_NAME = Giotto;
+				PRODUCT_NAME = Giotto;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		88DD60A85298BA4BB8B593243B024B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8FCDB135547674B28CBFA3E389F213 /* Pods-Giotto_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Giotto_Example/Pods-Giotto_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Giotto_Example/Pods-Giotto_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C94BE5144648483CCEF033D244913DB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF99E078F5DE41A56D9D37AA879EC636 /* Pods-Giotto_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Giotto_Tests/Pods-Giotto_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Giotto_Tests/Pods-Giotto_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF54A72E467D2FE6A514F52E26280B06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		1D5086897C3B645E648DC1E34B45CB8B /* Build configuration list for PBXNativeTarget "Pods-Giotto_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
-				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+				C94BE5144648483CCEF033D244913DB3 /* Debug */,
+				6A1D22B52C752087F31BFEEDD7649DF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		743C225ECED285DF5E47541027BBAC5C /* Build configuration list for PBXNativeTarget "Giotto" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5955D1879E19293E6D027DD67807FA19 /* Debug */,
-				675C51F41BE0F63A412FB562C6943986 /* Release */,
+				07B3DBAD4E15EC23FB08F6B8B4C9D9F2 /* Debug */,
+				FF54A72E467D2FE6A514F52E26280B06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E26B306AD2AEC77D8323B69F5525AB0 /* Build configuration list for PBXNativeTarget "Blabber" */ = {
+		AE451CB0B3AC88C204382DAE4369C513 /* Build configuration list for PBXNativeTarget "Giotto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB3EA07DF10F5A0D7112308E52693952 /* Debug */,
-				EFC645949D98EA1330D160A9612BCCB4 /* Release */,
+				246FA4226DFBED8460DF79E9B6892488 /* Debug */,
+				84739617123CBE5D406B731EED86ABDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAB3368B81111FC81790951B30236AF3 /* Build configuration list for PBXNativeTarget "Pods-Giotto_Example" */ = {
+		E42F2CB82976F6D233F6D923FC8F5F37 /* Build configuration list for PBXNativeTarget "Pods-Giotto_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19D3451CF36E9D3BA74623F886855500 /* Debug */,
-				FAFBB2F92968F087EB9F5A791689CAA5 /* Release */,
+				88DD60A85298BA4BB8B593243B024B9A /* Debug */,
+				58ED0B7F1B9F8B080A0B6E9000CCF869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6A6A37D1B074A33D234941A9F9EC68F /* Build configuration list for PBXNativeTarget "Pods-Giotto_Tests" */ = {
+		EF2477DAF99F3B5480BB333675EBA8C0 /* Build configuration list for PBXNativeTarget "Blabber" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8EC7B61B97CEBD9ABF49D556B962A04D /* Debug */,
-				09F2FD07B8ECCB73DED72BC0E1E77044 /* Release */,
+				301D98EACE8847D56D84CCC061FA6A30 /* Debug */,
+				82BF88ABF2065B7803E549B88D06539C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

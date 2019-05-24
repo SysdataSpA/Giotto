@@ -1,23 +1,27 @@
 PODS:
-  - Blabber (1.1.3):
-    - Blabber/Core (= 1.1.3)
-  - Blabber/Core (1.1.3)
-  - Giotto/Blabber (0.1.0):
+  - Blabber (1.1.8):
+    - Blabber/Core (= 1.1.8)
+  - Blabber/Core (1.1.8)
+  - Giotto/Blabber (0.3.4):
     - Blabber
     - Giotto/Core
-  - Giotto/Core (0.1.0)
+  - Giotto/Core (0.3.4)
 
 DEPENDENCIES:
   - Giotto/Blabber (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Blabber
+
 EXTERNAL SOURCES:
   Giotto:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Blabber: 669f61f7d0a17ed412cb798c1056bb2cc5e88579
-  Giotto: beb92b584454e90f25654f931b5e2b3dc6bce641
+  Blabber: 1cbdcf9e135d23f0ff406c25c0103fa925961d68
+  Giotto: 69fb95a2c04476adc8ed2097f98b82ee093e6598
 
 PODFILE CHECKSUM: 6860ee30b592780b8c79b18b53f2c0b392a2ce71
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.6.1

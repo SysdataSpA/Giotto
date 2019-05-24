@@ -32,7 +32,7 @@ typedef NS_ENUM (NSUInteger, SDLogLevel)
 @protocol SDLoggerDelegate <NSObject>
 
 @optional
-- (void) logger:(SDLogger* _Nonnull)logger didReceiveLogWithLevel:(SDLogLevel)level syncMode:(BOOL)syncMode module:(NSString *_Nullable)module file:(NSString *_Nullable)file function:(NSString* _Nullable)function line:(NSUInteger)line format:(NSString * _Nullable)format arguments:(va_list)arguments;
+- (void) logger:(SDLogger* _Nonnull)logger didReceiveLogWithLevel:(SDLogLevel)level syncMode:(BOOL)syncMode module:(NSString *_Nullable)module file:(NSString *_Nullable)file function:(NSString* _Nullable)function line:(NSUInteger)line message:(NSString * _Nullable)message;
 
 @end
 
@@ -131,6 +131,10 @@ typedef NS_ENUM (NSUInteger, SDLogLevel)
  *  @param loggers loggers to use. This objects should implement `DDLogger´ protocol.
  */
 - (void) setupWithLoggers:(NSArray* _Nullable)loggers;
+
+#if COCOALUMBERJACK
+- (void) setupWithFormatter:(id<DDLogFormatter> _Nullable)formatter;
+#endif
 
 /**
  * set log level for a specific module.

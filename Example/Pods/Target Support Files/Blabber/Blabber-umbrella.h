@@ -12,7 +12,7 @@
 
 #import "SDLogger.h"
 #import "SDLogModules.h"
-#import "SysdataCoreDev-Bridging-Header.h"
+#import "Blabber-Bridging-Header.h"
 
 FOUNDATION_EXPORT double BlabberVersionNumber;
 FOUNDATION_EXPORT const unsigned char BlabberVersionString[];

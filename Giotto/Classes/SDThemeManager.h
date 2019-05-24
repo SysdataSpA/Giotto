@@ -35,6 +35,18 @@
 #define themeFontForKeyAndSize(key, size) \
 [[SDThemeManager sharedManager] themeFontForKey: key andSize: size]
 
+@protocol SDThemeManagerDelegate <NSObject>
+
+/**
+ Load the plist theme file data from given path
+
+ @param path path the plist file path
+ @return the plist file data
+ */
+- (NSData*)plistThemeDataAtPath:(NSString*)path;
+
+@end
+
 @class SDThemeManager;
 
 SDThemeManager* themeManagerSharedInstance();
@@ -63,6 +75,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object);
 @interface SDThemeManager : NSObject
 #endif
 
+@property (weak, nonatomic) id<SDThemeManagerDelegate> delegate;
 
 /**
  * Invoking this method allows you to use alternative themes other than the default one, which should be specified in the theme theme_default.plist
