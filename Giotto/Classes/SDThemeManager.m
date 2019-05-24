@@ -142,10 +142,6 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 - (NSData*)loadPlistDataAtPath:(NSString*)path {
-    if (self.delegate && [self.delegate conformsToProtocol:@protocol(SDThemeManagerDelegate)]) {
-        return [self.delegate plistThemeDataAtPath:path];
-    }
-    
     return [NSData dataWithContentsOfFile:path];
 }
 
