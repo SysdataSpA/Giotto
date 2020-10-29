@@ -378,7 +378,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     
     if ([font isKindOfClass:[UIFont class]])
     {
-        return [UIFont fontWithName:((UIFont*)font).fontName size:fontSize];
+        return [font fontWithSize:fontSize];
     }
     return [UIFont fontWithName:themeValue size:fontSize];
 }
@@ -447,6 +447,15 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
  */
 - (UIColor*) colorForString:(NSString*)color
 {
+    // Try to retrieve color from assets by using the same name
+    if (@available(iOS 11, *)) {
+        UIColor* assetsColor = [UIColor colorNamed:color];
+        if (assetsColor)
+        {
+            return assetsColor;
+        }
+    }
+    
     // Interprets the color from the string in the RRBBGGAA format (red, green, blue, alpha)
     if (color.length != 6 && color.length != 8 && color.length != 3 && color.length != 4)
     {
@@ -1182,7 +1191,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 }
 
 
-/** 
+/**
  *  This method cycles recursively on the provided keypath by creating or adding values ​​to the grafted dictionaries.
  *  At every step of the keypath if the dictionary already exists continues to next step, if it does not exist it creates a new one.
  *  When it comes to the last step, set the value
@@ -1234,7 +1243,7 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     }
 }
 
-/** 
+/**
 *   Available values are:
 *   - NSString
 *   - NSNumber
