@@ -117,7 +117,11 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
     self.defaultTheme = [self loadThemeFromPlist:THEME_DEFAULT_PLIST_NAME];
     if (self.defaultTheme)
     {
-        self.themes = @[self.dynamicTheme, self.defaultTheme];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:self.pathForDynamicTheme]) {
+            self.themes = @[self.dynamicTheme, self.defaultTheme];
+        } else {
+            self.themes = @[self.defaultTheme];
+        }
     }
     else
     {
@@ -230,7 +234,9 @@ void SDThemeManagerApplyStyle (NSString* key, NSObject* object){
 - (void)setAlternativeThemesWithPaths:(NSArray<NSString *> *)alternativeThemePaths
 {
     NSMutableArray* themesNew = [NSMutableArray array];
-    [themesNew addObject:self.dynamicTheme];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:self.pathForDynamicTheme]) {
+        [themesNew addObject:self.dynamicTheme];
+    }
     for (NSString* path in alternativeThemePaths)
     {
         // for each path indicated, if it exists, add the topic to the array of themes in the specified order
