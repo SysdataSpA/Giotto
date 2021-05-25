@@ -31,7 +31,7 @@ At the same level as Constants, other dictionaries can be defined as function gr
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
   s.swift_version = '4.2'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
 
   s.subspec 'Core' do |co|
